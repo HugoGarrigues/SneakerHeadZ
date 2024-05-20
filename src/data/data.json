@@ -1,0 +1,124 @@
+{
+    "sneakers" : [
+        {
+            "id": 1,
+            "mark": "Nike",
+            "name": "Air Jordan 4 Retro White Oreo",
+            "price_drop": 190,
+            "date_drop" : "03.07.2021",
+            "description" : "La Air Jordan 4 Retro White Oreo possède une empeigne en cuir et en mesh de couleur blanche, avec des touches Tech Grey au niveau des œillets et de la semelle intermédiaire. Le logo Jumpman rouge brodé sur la languette apporte une pointe de couleur à ce modèle à la nuance neutre.",
+            "color" : "White/Tech Grey/Black/Fire Red",
+            "img_1" : "/items/Air Jordan 4 Retro White Oreo_1.jpg",
+            "img_2" : "/items/Air Jordan 4 Retro White Oreo_2.jpg"
+        },
+        {
+            "id" : 2,
+            "mark" : "Nike",
+            "name" : "sacai x Nike VaporWaffle « White/Sail »",
+            "price_drop" : 180,
+            "date_drop" : "10.03.2022",
+            "description" : "La Nike Vaporwaffle sacai Sail Gum possède une empeigne en nylon écru, rehaussée de renforts en daim gris clair et de Swoosh en cuir foulonné. Les languettes et les Swoosh apparaissant en double rappellent l'esthétique restructurée de sacai. À la base, la semelle intermédiaire à plusieurs épaisseurs en mousse et la semelle extérieure en gomme viennent compléter ce modèle.",
+            "color" : "White/Sail-Sail",
+            "img_1" : "/items/sacai x Nike VaporWaffle WhiteSail_1.jpg",
+            "img_2" : "/items/sacai x Nike VaporWaffle WhiteSail_2.jpg"
+        },
+        {
+            "id" : 3,
+            "mark" : "Nike",
+            "name" : "Nike Air Max Plus Atlanta",
+            "price_drop" : 170,
+            "date_drop" : "27.02.2021",
+            "description" : "La Atlanta TN ne se contente pas d'être une œuvre d'art visuelle, elle se dote également de caractéristiques techniques de pointe. Son empeigne, parée de nuances de rose, est conçue avec des matériaux de qualité supérieure, qui offrent une durabilité exceptionnelle. La technologie Air Max insérée dans la semelle intermédiaire assure un amorti optimal, réduisant les impacts et apportant une sensation de légèreté à chaque pas. La semelle extérieure en caoutchouc robuste garantit quant à elle une adhérence fiable sur toutes les surfaces. En somme, la TN Rose Atlanta incarne l'essence même du streetwear, en combinant style audacieux, pep’s, et performance technique.",
+            "color" : "Pink",
+            "img_1" : "/items/Nike Air Max Plus Atlanta_1.jpg",
+            "img_2" : "/items/Nike Air Max Plus Atlanta_2.jpg"
+        },
+        {
+            "id" : 4,
+            "mark" : "Nike",
+            "name" : "Travis Scott x Air Jordan 1 Low OG Olive",
+            "price_drop" : 160,
+            "date_drop" : "26.04.2023",
+            "description" : "Elle possède une empeigne alliant du cuir blanc et du nubuck noir. On retrouve le Swoosh Nike signature à l'envers, orné du coloris vert olive. Cette chaussure en édition limitée présente une semelle intermédiaire vieillie et une semelle extérieure également vert olive.",
+            "color" : "Sail/University Red-Black-Medium Olive",
+            "img_1" : "/items/Travis Scott x Air Jordan 1 Low OG Olive_1.jpeg",
+            "img_2" : "/items/Travis Scott x Air Jordan 1 Low OG Olive_2.jpeg"
+        },
+        {
+            "id" : 5,
+            "mark" : "Nike",
+            "name" : "Air Jordan 4 « Military Black »",
+            "price_drop" : 210,
+            "date_drop" : "21.05.2022",
+            "description" : "Inspirée du style color block de la Air Jordan 4 Military Blue, ce modèle possède une empeigne en cuir lisse blanc, rehaussée d'une pointe en cuir synthétique Durabuck gris clair et de maillages en TPU. Les œillets, la patte au talon et les renforts Military Black créent un contraste saisissant. Dotée d'une unité Air visible, la semelle blanche, noire et gris clair vient compléter ce modèle.",
+            "color" : "White/Black-Neutral Grey",
+            "img_1" : "/items/Air Jordan 4 « Military Black »_1",
+            "img_2" : "/items/Air Jordan 4 « Military Black »_2"
+        },
+        {
+            "id" : 6,
+            "mark" : "Nike",
+            "name" : "Air Jordan 4 Red Thunder",
+            "price_drop" : 190,
+            "date_drop" : "15.01.2022",
+            "description" : "Dotée du même color-block que la Air Jordan 4 Thunder, the Air Jordan 4 Red Thunder possède une empeigne entièrement noire en cuir synthétique Durabuck, avec des empiècements et des œillets en maillage rouge. L'écusson Air Jordan Flight emblématique est cousu sur la languette. La semelle intermédiaire à la nuance rouge éclatante et le logo Jumpman sur la patte au talon viennent compléter ce modèle rétro.",
+            "color" : "BLACK/MULTI-COLOR-MULTI-COLOR-CRIMSON",
+            "img_1" : "/items/Air Jordan 4 Red Thunder_1.jpeg",
+            "img_2" : "/items/Air Jordan 4 Red Thunder_2.jpeg"
+        },
+        {
+            "id" : 7,
+            "mark" : "Nike",
+            "name" : "Air Jordan 1 High OG Lost & Found",
+            "price_drop" : 180,
+            "date_drop" : "11.01.2024",
+            "description" : "Lancée en 1985, la Air Jordan 1 Chicago a fait l'objet d'un nombre limité de rééditions. Avec son empeigne en cuir blanc rehaussée de renforts rouges et de Swoosh latéraux noirs, le millésime 2022 reprend les codes du modèle d'origine. La semelle intermédiaire subtilement jaunie et le cuir légèrement craquelé au niveau du col et de la pointe lui confèrent exactement la touche vintage recherchée. La Air Jordan 1 Lost and Found Chicago est sortie en novembre 2022 au prix de 180 $.",
+            "img_1" : "/items/Air Jordan 1 High OG Lost & Found_1.jpeg",
+            "img_2" : "/items/Air Jordan 1 High OG Lost & Found_2.jpeg"
+        },
+        {
+            "id" : 8,
+            "mark" : "Nike",
+            "name" : "Off-White x Nike Air Force 1 Low Brooklyn",
+            "price_drop" : 160,
+            "date_drop" : "13.09.2022",
+            "description" : "La Nike Air Force 1 Low Off-White Light Green Spark arbore une base en cuir vert étincelant qui recouvre toute la structure. Sa languette en mousse se voit perforée à la manière des . Les panels latéraux se parent d'un swoosh argenté à la finition légèrement craquelée. Plusieurs surpiqûres noires viennent entourer le branding déstructuré au tag vert fluo. Une inscription AIR blanche orne la semelle monochrome et marque la signature industrielle du défunt designer. ",
+            "color" : "Light Green Spark/Metallic Silver-Light Green Spark",
+            "img_1" : "/items/Off-White x Nike Air Force 1 Low Brooklyn_1.jpeg",
+            "img_2" : "/items/Off-White x Nike Air Force 1 Low Brooklyn_2.jpeg"            
+        },
+        {
+            "id" : 9,
+            "mark" : "Nike",
+            "name" : "Supreme x Nike Air Force 1 Low White",
+            "price_drop" : 128,
+            "date_drop" : "05.03.2020",
+            "description" : "Le label de James Jebbia a choisi de revisiter la classique Air Force 1 tout en conservant l’essence du modèle créé par Bruce Kilgore en 1982. En effet, le célèbre box logo Supreme rouge vient s’implanter sur l’arrière et les insoles de la sneaker entièrement vêtue de blanc. Ce design minimaliste est finalisé par un deubré argenté qui apporte un peu de contraste. Un set supplémentaire de lacets rouges estampillés du branding Supreme accompagne la paire.",
+            "color" : "White/White",
+            "img_1" : "Supreme x Nike Air Force 1 Low White_1.jpeg",
+            "img_2" : "Supreme x Nike Air Force 1 Low White_2.jpeg"
+        },
+        {
+            "id" : 10,
+            "mark" : "Nike",
+            "name" : "Travis Scott x fragment x Air Jordan 1 High",
+            "price_drop" : 200,
+            "date_drop" : "29.07.2021",
+            "description" : "Dotée d'une empeigne en cuir foulonné blanc et bleu, la Air Jordan 1 High OG SP Fragment Design x Travis Scott Fragment s'inspire d'une Jordan 1 Royal sortie en 1985. Comme sur les précédents modèles Jordan 1 Travis Scott, les poches secrètes au niveau du col et les Swoosh à l'envers emblématiques viennent parachever ce modèle classique. Les logos Cactus Jack de Travis Scott et Fragment sont gravés en noir au niveau du talon.",
+            "color" : "Sail/Black/Military Blue/Shy Pink",
+            "img_1" : "/items/Travis Scott x fragment x Air Jordan 1 High_1.jpg",
+            "img_2" : "/items/Travis Scott x fragment x Air Jordan 1 High_2.jpg"
+        },
+        {
+            "id" : 11,
+            "mark" : "New Balance",
+            "name" : "New Balance 2002R Light Arctic Grey « Protection Pack »",
+            "price_drop" : 160,
+            "date_drop" : "25.10.2022",
+            "description" : "Cette édition fait partie du nouveau Protection Pack 2022, reconnaissable par son design premium et déconstruit. La New Balance 2002R présente une tige en daim mauve et mesh gris, complétée par une midsole Abzorb vintage. La nouvelle New Balance 2002R Light Arctic Grey « Protection Pack » arrivera le 2 septembre chez certains revendeurs et devrait aussi être disponible sur NewBalance.fr et chez certains détaillants comme Afew, au prix de 160€. Sachez que le coloris « Pink » sera disponible le même jour.",
+            "color" : "Light Arctic Grey",
+            "img_1" : "/items/New Balance 2002R Light Arctic Grey « Protection Pack »_1.jpg",
+            "img_2" : "/items/New Balance 2002R Light Arctic Grey « Protection Pack »_2.jpg"
+        }
+    ]
+}
