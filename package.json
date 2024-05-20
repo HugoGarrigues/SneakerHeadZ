@@ -1,0 +1,25 @@
+{
+  "name": "sneakerheadz",
+  "version": "1.0.0",
+  "description": "Projet Sneakers",
+  "main": "app.js",
+  "scripts": {
+    "start": "supervisor app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HugoGarrigues/SneakerHeadZ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HugoGarrigues/SneakerHeadZ/issues"
+  },
+  "homepage": "https://github.com/HugoGarrigues/SneakerHeadZ#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  }
+}
