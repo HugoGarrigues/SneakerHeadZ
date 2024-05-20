@@ -26,6 +26,11 @@ app.use('/collection', collectionRouter);
 // Test de connexion DB
 testConnection();
 
+module.exports = router;
+const accountRouter = require('./controllers/accountController'); // Vérifiez le chemin
+app.use('/account', accountRouter);
+
+
 // Démarrage du serveur
 app.listen(port, () => {
     console.log(`Serveur sur http://localhost:${port}`);
