@@ -1,6 +1,5 @@
 # SneakerHeadz
 
-## Naissance du Projet
 Ce projet est un projet a réaliser dans le cadre du Projet B2 Dev 23-24. 
 
 Au départ il nous est proposé de choisir entre plusieurs projets, au cours de cette réflexion nous sommes venues a bout de ce choix et nous sommes donc parties sur le projet personnel. De la est né "SneakerHeadZ".
@@ -20,9 +19,10 @@ Rejoignez-nous et découvrez une nouvelle manière de trouver et d'acheter des s
 
 ## Sommaire
 
+- [Description](#description)
+- [Fonctionnalités](#fonctionnalités)
 - [Installation](#installation)
 - [Utilisation](#utilisation)
-- [Base de données](#base-de-données)
 - [Architecture](#architecture)
 - [Technologies](#technologies)
 - [Auteurs](#auteurs)
