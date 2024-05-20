@@ -3,29 +3,24 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+// Middleware pour servir les fichiers statiques
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src','routes', 'home.html'));
-});
+// Importation des routeurs
+const homeRouter = require('./routes/homeRoutes');
+const wishlistRouter = require('./routes/wishlistRoutes');
+const newsRouter = require('./routes/newsRoutes');
+const accountRouter = require('./routes/accountRoutes');
+const collectionRouter = require('./routes/collectionRoutes');
 
-app.get('/wishlist', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src', 'routes', 'wishlist.html'));
-});
+// Utilisation des routeurs
+app.use('/', homeRouter);
+app.use('/wishlist', wishlistRouter);
+app.use('/news', newsRouter);
+app.use('/account', accountRouter);
+app.use('/collection', collectionRouter);
 
-app.get('/news', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src', 'routes', 'news.html'));
-});
-
-app.get('/account', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src', 'routes', 'account.html'));
-});
-
-app.get('/collection', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src', 'routes', 'collection.html'));
-});
-
-
+// Démarrage du serveur
 app.listen(port, () => {
     console.log(`Serveur sur http://localhost:${port}`);
 });
