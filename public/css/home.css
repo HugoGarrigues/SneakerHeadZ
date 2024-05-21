@@ -36,7 +36,9 @@
     /*border-bottom: 5px solid rgba(0, 0, 0, 0.1);*/
     align-items: center;
     color: white;
-    position: sticky;
+    width: 100%;
+    position: fixed;
+    background-color: #202020;
     }
 
     nav a {
