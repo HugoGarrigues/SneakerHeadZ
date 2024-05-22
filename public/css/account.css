@@ -1,13 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #202020;
-}
-
 .login-container {
-    margin-top: 150px;
-    margin-left: 29%;
     display: flex;
     width: 70%;
     max-width: 850px;
@@ -34,13 +25,11 @@ body {
     margin-bottom: 40px;
     color: #555;
     text-align: center;
-    
 }
 
 .login-form form {
     display: flex;
     flex-direction: column;
-    
 }
 
 .login-form label {
@@ -48,15 +37,63 @@ body {
     color: #000;
 }
 
-#size-label {
-    font-family: 'Montserrat-Medium';
-}
-
 .login-form input {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.login-form p a {
+    color: #ff4b4b;
+    text-decoration: none;
+}
+
+
+.sign-form {
+    padding: 40px;
+    flex: 1;
+    background-color: #fff;
+    display: none;
+}
+
+.sign-form h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000;
+    text-align: center;
+}
+
+.sign-form p {
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+}
+
+.sign-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-form label {
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.sign-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sign-form p a {
+    color: #ff4b4b;
+    text-decoration: none;
+}
+
+#size-label {
+    font-family: 'Montserrat-Medium';
 }
 
 .options {
@@ -89,10 +126,6 @@ button:hover {
     background-color: #c52d35;
 }
 
-.login-form p a {
-    color: #ff4b4b;
-    text-decoration: none;
-}
 
 .login-image {
     flex: 1;
@@ -103,4 +136,17 @@ button:hover {
 #no-account {
     margin-top: 37px;
     font-size: 0.8em;
+}
+
+#no-account-2 {
+    margin-top: 37px;
+    font-size: 0.8em;
+}
+
+#login {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }

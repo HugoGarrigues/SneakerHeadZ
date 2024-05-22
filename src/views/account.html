@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/account.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/navbar.css">
     <title>Account</title>
 </head>
 
@@ -33,7 +34,12 @@
         </div>
     </nav>
 
+    <section id="login">
+
+
     <div class="login-container">
+
+         
         <div class="login-form">
             <h1>BON RETOUR</h1>
             <p>Bon Retour! Merci d'entrer vos informations</p>
@@ -55,17 +61,60 @@
             </form>
             <p id="no-account">Pas de compte? <a href="#">Inscrivez-vous gratuitement</a></p>
         </div>
+
+        <div class="sign-form">
+            <h1>BIENVENUE</h1>
+            <p>Bienvenue ! Merci d'entrer vos informations</p>
+            <form>
+                <label id="size-label" for="email">Email</label>
+                <input type="email" id="email" placeholder="Entrez votre email" required>
+                
+                <label id="size-label" for="password">Mot de passe</label>
+                <input type="password" id="password" placeholder="****************" required>
+
+                <label id="size-label" for="password">Confirmation de mot de passe</label>
+                <input type="password" id="password" placeholder="****************" required>
+
+                <label id="size-label-2" for="surname">Nom</label>
+                <input type="text" id="surname" placeholder="Entrez votre nom" required>
+
+                <label id="size-label-2" for="name">Prénom</label>
+                <input type="text" id="name" placeholder="Entrez votre prénom" required>
+                
+                <button type="submit">S'inscrire</button>
+            </form>
+            <p id="no-account-2">Déja un compte ? <a href="#">Connectez vous</a></p>
+        </div>
+
         <div class="login-image">
 
         </div>
     </div>
 
 
+</section>
     <!-- Footer -->
-
-    <!-- todo -->
-
-
-
+    <!-- Todo -->
 </body>
+
+<script>
+
+    const noAccount = document.getElementById('no-account');
+    const noAccount2 = document.getElementById('no-account-2');
+    const loginForm = document.querySelector('.login-form');
+    const signForm = document.querySelector('.sign-form');
+
+    noAccount.addEventListener('click', () => {
+        loginForm.style.display = 'none';
+        signForm.style.display = 'block';
+    });
+
+    noAccount2.addEventListener('click', () => {
+        loginForm.style.display = 'block';
+        signForm.style.display = 'none';
+    });
+
+
+</script>
+
 </html>

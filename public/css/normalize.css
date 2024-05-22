@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Montserrat-Regular';
+        background-color: #202020;
+        }
+
+    @font-face {
+        font-family: 'Montserrat-Medium';
+        src: url('/img/font/Montserrat-Medium.ttf');
+    }
+
+    @font-face {
+        font-family: 'Montserrat-Regular';
+        src: url('/img/font/Montserrat-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: 'Montserrat-Bold';
+        src: url('/img/font/Montserrat-Bold.ttf');
+    }
