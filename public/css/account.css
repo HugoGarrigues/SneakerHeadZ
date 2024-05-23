@@ -54,7 +54,7 @@
     padding: 40px;
     flex: 1;
     background-color: #fff;
-    display: none;
+    display: block;
 }
 
 .sign-form h1 {

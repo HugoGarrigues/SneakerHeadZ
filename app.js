@@ -5,7 +5,6 @@ const { testConnection } = require('./src/config/db');
 const app = express();
 const port = 3000;
 
-
 // Middleware pour servir les fichiers statiques
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -20,10 +19,10 @@ const collectionRouter = require('./src/routes/collectionRoutes');
 app.use('/', homeRouter);
 app.use('/wishlist', wishlistRouter);
 app.use('/news', newsRouter);
-app.use('/account', accountRouter);
+app.use('/account', accountRouter); // Ce routeur gère maintenant /account/login et /account/register
 app.use('/collection', collectionRouter);
 
-// Test de connexion DB
+// Test de connexion à la base de données
 testConnection();
 
 // Démarrage du serveur
