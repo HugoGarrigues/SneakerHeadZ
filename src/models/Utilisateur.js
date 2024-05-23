@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/db');
+const { sequelize } = require('../config/db'); // Assurez-vous que sequelize est importé correctement
 
 class Utilisateur extends Model {}
 
@@ -23,12 +23,12 @@ Utilisateur.init({
         unique: true
     },
     motDePasse: {
-        type: DataTypes.VARBINARY(255),
+        type: DataTypes.STRING,
         allowNull: false
     }
 }, {
-    sequelize,
-    modelName: 'utilisateur',
+    sequelize, // Passer l'objet sequelize ici
+    modelName: 'Utilisateur', // Assurez-vous que le nom du modèle est correct
     tableName: 'utilisateur',
     timestamps: false
 });
