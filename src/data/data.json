@@ -119,6 +119,61 @@
             "color" : "Light Arctic Grey",
             "img_1" : "/items/New Balance 2002R Light Arctic Grey « Protection Pack »_1.jpg",
             "img_2" : "/items/New Balance 2002R Light Arctic Grey « Protection Pack »_2.jpg"
+        },
+        {
+            "id" : 12,
+            "mark" : "New Balance",
+            "name" : "New Balance 2002R Protection Pack Grey",
+            "price_drop" : 170,
+            "date_drop" : "13.04.2023",
+            "description" : "L'empeigne se compose de matériaux synthétiques et de mesh respirant. La semelle intermédiaire en mousse réactive absorbe les chocs et assure une parfaite stabilité. La semelle extérieure en caoutchouc se révèle solide et antidérapante. La pointe renforcée et le contrefort au talon garantissent une protection optimale du pied. L'emblème N apparaît sur les côtés interne et externe, tandis que l'inscription 2002R figure au niveau du col. La patte au talon arbore un logo NB blanc.",
+            "color" : "Slate Grey/Brighton Grey/Reflection",
+            "img_1" : "/items/New Balance 2002R Protection Pack Grey_1.jpg",
+            "img_2" : "/items/New Balance 2002R Protection Pack Grey_2.jpg"
+        },
+        {
+            "id" : 13,
+            "mark" : "New Balance",
+            "name" : "New Balance 2002R Protection Pack Black Grey",
+            "price_drop" : 170,
+            "date_drop" : "13.04.2023",
+            "description" : "Elle possède une empeigne alliant différentes matières noires et grises, notamment des renforts en mesh durable et en tissu synthétique respirant. Par ailleurs, le logo « N » classique vient orner les deux côtés avec un coloris noir et blanc contrastant. Sa semelle intermédiaire présente une nuance blanche et grise. De plus, la technologie ABZORB intégrée à l'amorti de la semelle intermédiaire assure une absorption exceptionnelle des chocs et une réactivité incroyable. Sa semelle extérieure noire se compose de caoutchouc durable à rainures multidirectionnelles pour plus d'adhérence. Enfin, ses lacets garantissent une tenue personnalisée, tandis que sa languette et son col rembourrés offrent plus de confort et de stabilité.",
+            "color" : "Black/Concrete/Silver Metallic",
+            "img_1" : "/items/New Balance 2002R Protection Pack Black Grey_1.webp",
+            "img_2" : "/items/New Balance 2002R Protection Pack Black Grey_2.jpg"
+        },
+        {
+            "id" : 14,
+            "mark" : "New Balance",
+            "name" : "New Balance 2002R « Phantom » Protection Pack",
+            "price_drop" : 150,
+            "date_drop" : "01.04.2022",
+            "description" : "La New Balance 2002R Protection Pack Phantom possède une empeigne en mesh gris anthracite rehaussée de renforts de la même couleur en daim à bords bruts. La semelle intermédiaire Nrgy noire et la semelle extérieure assortie viennent parachever ce modèle.",
+            "color" : "Phantom/Dark Grey",
+            "img_1" : "/items/New Balance 2002R « Phantom » Protection Pack_1.jpeg",
+            "img_2" : "/items/New Balance 2002R « Phantom » Protection Pack_2.jpeg"
+        },
+        {
+            "id" : 15,
+            "mark" : "New Balance",
+            "name" : "New Balance 550 « White/Green »",
+            "price_drop" : 130,
+            "date_drop" : "24.06.2021",
+            "description" : "Dotée d'une pointe en daim gris clair, la New Balance 550 White Green possède une empeigne en cuir blanc rehaussée de détails vert pin. L'étiquette ornée d'un ballon de basket et de la marque New Balance cousue sur la languette et la semelle assortie viennent parachever ce modèle rafraîchissant.",
+            "color" : "White/Green",
+            "img_1" : "/items/New Balance 550 « WhiteGreen »_1.jpg",
+            "img_2" : "/items/New Balance 550 « WhiteGreen »_2.jpg"
+        },
+        {
+            "id" : 16,
+            "mark" : "New Balance",
+            "name" : "New Balance 550 « UNC »",
+            "price_drop" : 120,
+            "date_drop" : "18.02.2022",
+            "color" : "White/Team Carolina",
+            "description" : "Revêtant les couleurs de l’Université de Caroline du Nord, cette nouvelle New Balance 550 dispose d’une tige élaborée en cuir blanc. Les fameux accents bleu ciel, quant à eux, s’invitent au niveau de la doublure, du col en synthétique ou encore sur les nombreux brandings comme le tag rétro basket sur la languette. Une semelle immaculée, de même qu’une outsole bicolore, viennent compléter le look.",
+            "img_1" : "/items/New Balance 550 « UNC »_1.jpeg",
+            "img_2" : "/items/New Balance 550 « UNC »_2.jpeg"
         }
     ]
 }
