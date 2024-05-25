@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Releases</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/collection.css">
+</head>
+<body>
+
+     <!-- NAVBAR -->
+      <nav>
+        <div id="nav-div-1">
+            <a  href="/">Home</a>
+            <a id="a" href="/collection">Releases</a>
+            <a href="/news">News</a>
+        </div>
+
+        <div id="nav-div-2">
+            <img src="/img/vector/logo.svg" alt="logo_SneakerHead">
+        </div>
+
+        <div id="nav-div-3">
+            <a href="">
+            <img src="/img/vector/heart.svg" alt="">
+            </a>
+            <a href="/account/login">
+            <img src="/img/vector/user.svg" alt="">
+            </a>
+        </div>
+    </nav> 
+
+    <!-- Second Navbar -->
+    <div id="test">
+
+    </div>
+
+
+    <div class="container">
+    
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="filters-brand">
+                <h2>Marques</h2>
+                <label><input type="checkbox" name="nike"> Nike</label>
+                <label><input type="checkbox" name="adidas"> Adidas</label>
+                <label><input type="checkbox" name="new_balance"> New Balance</label>
+                <label><input type="checkbox" name="air_jordan" checked> Air Jordan</label>
+                <label><input type="checkbox" name="converse"> Converse</label>
+            </div>
+            <div class="filters-models">
+                <h2>Modèles</h2>
+                <label><input type="checkbox" name="air_jordan_1" checked> Air Jordan 1</label>
+                <label><input type="checkbox" name="air_jordan_2"> Air Jordan 2</label>
+                <label><input type="checkbox" name="air_jordan_3"> Air Jordan 3</label>
+                <label><input type="checkbox" name="air_jordan_4"> Air Jordan 4</label>
+                <label><input type="checkbox" name="air_jordan_5"> Air Jordan 5</label>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="sort-options">
+                    <p>Trier par</p>
+                    <button>Dernières Sorties</button>
+                    <button>Plus Populaires</button>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Quelle paire recherches-tu ?">
+                </div>
+            </div>
+            <div class="sneaker-list" id="sneaker-list">
+
+                <!-- Sneaker card template -->
+                <div class="sneaker-item" id="sneaker-template" style="display: none;">
+                    <img src="" alt="Sneaker Image">
+                    <div class="sneaker-info">
+                        <h3>Sneaker Name</h3>
+                        <p>À partir de <span class="sneaker-price">0€</span><br><span class="sneaker-date">Date</span></p>
+                    </div>
+                </div>
+                <!-- todo recuperer les paires avec l'api puis les integrer dans les cartes avec du js -->
+
+            </div>
+            <div class="pagination">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <!-- todo script js pour calculer le nombre de paires restantes pour pagination -->
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
