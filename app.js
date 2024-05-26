@@ -17,6 +17,8 @@ const wishlistRouter = require('./src/routes/wishlistRoutes');
 const newsRouter = require('./src/routes/newsRoutes');
 const accountRouter = require('./src/routes/accountRoutes');
 const collectionRouter = require('./src/routes/collectionRoutes');
+const sneakersRouter = require('./src/routes/sneakersRoutes');
+
 
 // Utilisation des routeurs
 app.use('/', homeRouter);
@@ -24,6 +26,7 @@ app.use('/wishlist', wishlistRouter);
 app.use('/news', newsRouter);
 app.use('/account', accountRouter); // Ce routeur gère maintenant /account/login et /account/register
 app.use('/collection', collectionRouter);
+app.use('/sneakers', sneakersRouter);
 
 // Test de connexion à la base de données
 testConnection();
