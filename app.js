@@ -8,6 +8,9 @@ const port = 3000;
 // Middleware pour parser les requêtes JSON
 app.use(express.json());
 
+
+app.use('/items', express.static(path.join(__dirname, 'src/data/items')));
+
 // Middleware pour servir les fichiers statiques
 app.use(express.static(path.join(__dirname, 'public')));
 

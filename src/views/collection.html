@@ -95,6 +95,29 @@
             </div>
         </div>
     </div>
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/collection/api/sneakers')
+                .then(response => response.json())
+                .then(data => displaySneakers(data))
+                .catch(error => console.error('Erreur lors de la récupération des sneakers:', error));
+        
+            function displaySneakers(sneakers) {
+                const list = document.getElementById('sneaker-list');
+                sneakers.forEach(sneaker => {
+                    const sneakerElement = document.createElement('div');
+                    sneakerElement.className = 'sneaker-item';
+                    sneakerElement.innerHTML = `
+                        <img src="${sneaker.img_1}" alt="Sneaker Image">
+                        <div class="sneaker-info">
+                            <h3>${sneaker.name}</h3>
+                            <p>À partir de ${sneaker.price_drop}€<br><span class="sneaker-date">${sneaker.date_drop}</span></p>
+                        </div>
+                    `;
+                    list.appendChild(sneakerElement);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
