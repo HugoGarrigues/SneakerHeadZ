@@ -23,3 +23,24 @@
         font-family: 'Montserrat-Bold';
         src: url('/img/font/Montserrat-Bold.ttf');
     }
+    
+* {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
+}
+
+
+*::-webkit-scrollbar {
+    display: none; 
+}
+
+
+.scrollable {
+    overflow: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none;  
+}
