@@ -1,0 +1,85 @@
+
+#sneakers-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 95vh;
+}
+
+#sneakers-img {
+    background-color: #DFDFDF;
+    padding: 2%;
+}
+
+#sneakers-img img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+}
+
+#sneakers-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    width: 30%;
+}
+
+#sneakers-details h1 {
+    font-size: 2.2em;
+    margin-bottom: 18%;
+}
+
+#sneakers-details p {
+    font-size: 1em;
+    margin-bottom: 20%;
+    line-height: 1.6;
+}
+
+.sneaker-price-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    width: 100%;
+    background-color: #2C2C2C;
+}
+
+#section-1-div-3 {
+    display: flex;
+    justify-content: center;
+}
+
+#section-1-div-3 img {
+    width: 40px;
+    cursor: pointer;
+}
+
+#stock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #2C2C2C;
+    width: 100%;
+}
+
+#left-part {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    flex-direction: column;
+}
+
+#left-part p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+#stock-2 {
+    display: flex;
+}
