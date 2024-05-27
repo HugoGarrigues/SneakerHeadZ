@@ -7,7 +7,6 @@ const register = async (req, res) => {
     console.log('Register endpoint hit');
     const { nom, prenom, email, motDePasse } = req.body;
     try {
-        console.log('Received data:', { nom, prenom, email, motDePasse });
 
         const existingUser = await Utilisateur.findOne({ where: { email } });
         if (existingUser) {
@@ -17,7 +16,6 @@ const register = async (req, res) => {
 
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(motDePasse, salt);
-        console.log('Hashed password:', hashedPassword);
 
         const newUser = await Utilisateur.create({
             nom,
