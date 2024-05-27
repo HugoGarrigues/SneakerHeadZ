@@ -174,6 +174,50 @@
             "description" : "Revêtant les couleurs de l’Université de Caroline du Nord, cette nouvelle New Balance 550 dispose d’une tige élaborée en cuir blanc. Les fameux accents bleu ciel, quant à eux, s’invitent au niveau de la doublure, du col en synthétique ou encore sur les nombreux brandings comme le tag rétro basket sur la languette. Une semelle immaculée, de même qu’une outsole bicolore, viennent compléter le look.",
             "img_1" : "/items/New Balance 550 « UNC »_1.jpeg",
             "img_2" : "/items/New Balance 550 « UNC »_2.jpeg"
+        },
+        {
+            "id" : 17,
+            "mark" : "Adidas",
+            "name" : "adidas Campus 00s Grey",
+            "price_drop" : 110,
+            "date_drop" : "01.03.2023",
+            "description" : "Brillant par sa simplicité, ce design bicolore gris et blanc présente une languette et un lining doublés, signature de la Campus 00s. On retrouve également les emblématiques logos sur le col et au niveau du heeltab alors qu’une gumsole conclut ce sneaker tour.",
+            "color" : "Grey/White",
+            "img_1" : "/items/adidas Campus 00s Grey_1.jpg",
+            "img_2" : "/items/adidas Campus 00s Grey_2.jpg"
+        },
+        {
+            "id" : 18,
+            "mark" : "Adidas",
+            "name" : "adidas Yeezy Slide Onyx",
+            "price_drop" : 70,
+            "date_drop" : "27.05.2024",
+            "descrption" : "Toujours aussi populaire, la célèbre slipon adopte aujourd’hui le coloris Onyx. Celle-ci affiche une base noire, ainsi qu’une conception monobloc en EVA injecté pour la durabilité et la légèreté. On retrouve enfin un branding adidas au niveau de l’insole, de même que son incontournable semelle extérieure dentelée.",
+            "color" : "Onyx",
+            "img_1" : "/items/adidas Yeezy Slide Onyx_1.jpeg",
+            "img_2" : "/items/adidas Yeezy Slide Onyx_2.jpg"
+        },
+        {
+            "id" : 19,
+            "mark" : "Adidas",
+            "name" : "adidas Yeezy Boost 700 Wave Runner",
+            "price_drop" : 300,
+            "date_drop" : "03.08.2022",
+            "description" : "La adidas Yeezy Boost 700 Wave Runner marque un tournant dans l'histoire de ce modèle : l'allure épaisse inspirée des années 90 remplace une esthétique minimaliste et élégante. Elle mélange le style des chaussures de running en maille, comme la 350, et le look grunge de l'univers du skate de la 550. Son empeigne grise alliant mesh et cuir est rehaussée de renforts en daim noir et d'empiècements en mesh bleu sarcelle. Par ailleurs, sa semelle épaisse à amorti Boost et ses touches contrastées orange viennent compléter ce modèle.",
+            "color" : "Multi Solid Grey/Chalk White/Core Black",
+            "img_1" : "/items/adidas Yeezy Slide Pure_1.jpg",
+            "img_2" : "/items/adidas Yeezy Slide Pure_2.jpg"
+        },
+        {
+            "id" : 20,
+            "mark" : "Adidas",
+            "name" : "adidas Yeezy Slide Pure",
+            "price_drop" : 60,
+            "date_drop" : "06.09.2021",
+            "description" : "La populaire Yeezy Slide imaginée par Kanye West dispose d’une conception monobloc et affiche une tige en EVA beige viornetin. Le design monochrome arbore enfin un branding adidas au niveau de l’insole, de même qu’une semelle extérieure dentelée qui lui confère une adhérence sur tout type de terrain.",
+            "color" : "Pure",
+            "img_1" : "/items/adidas Yeezy Boost 700 Wave Runner_1.jpeg",
+            "img_2" : "/items/adidas Yeezy Boost 700 Wave Runner_2_jpeg"
         }
     ]
 }
