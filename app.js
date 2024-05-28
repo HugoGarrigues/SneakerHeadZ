@@ -11,10 +11,10 @@ app.use(express.json());
 
 // Configurer les sessions
 app.use(session({
-    secret: process.env.SESSION_SECRET || 'your_secret_key',
+    secret: 'Bonjour34!', // Choisis une clé secrète forte
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false } // Utilisez true en production avec HTTPS
+    cookie: { secure: false } // Utilise 'true' uniquement en production avec HTTPS
 }));
 
 app.use('/items', express.static(path.join(__dirname, 'src/data/items')));
