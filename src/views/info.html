@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/account.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/info.css">
     <title>Info</title>
 </head>
 <body>
@@ -24,17 +25,23 @@
             <a href="/account/info"><img src="/img/vector/user.svg" alt=""></a>
         </div>
     </nav>
-    <section id="info">
-        <div class="info-container">
-            <div class="info-form">
-                <h1>Mes Infos</h1>
-                <p id="name"></p>
-                <p id="prenom"></p>
-                <p id="email"></p>
+
+    <section id="login">
+        <div class="login-container">
+            <div class="login-form">
+                <h1>Vos Infos</h1>
+                <p></p>
+                <form id="loginForm">
+                    <p id="name"></p>
+                    <p id="prenom"></p>
+                    <p id="email"></p>
+                    <button type="submit">Se Déconnecter</button>
+                </form>
             </div>
-            <div class="info-image"></div>
+            <div class="login-image"></div>
         </div>
     </section>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             fetch('/account/api/user')
@@ -43,6 +50,8 @@
                     if (user.message) {
                         alert(user.message);
                     } else {
+                        user.nom = user.nom.charAt(0).toUpperCase() + user.nom.slice(1);
+                        user.prenom = user.prenom.charAt(0).toUpperCase() + user.prenom.slice(1);
                         document.getElementById('name').innerText = 'Nom : ' + user.nom;
                         document.getElementById('prenom').innerText = 'Prénom : ' + user.prenom;
                         document.getElementById('email').innerText = 'Email : ' + user.email;
@@ -51,5 +60,6 @@
                 .catch(error => console.error('Erreur lors de la récupération des informations utilisateur:', error));
         });
     </script>
+
 </body>
 </html>

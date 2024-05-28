@@ -120,6 +120,7 @@ button {
     font-size: 1rem;
     cursor: pointer;
     font-family: 'Montserrat-Medium';
+    margin-top: 20px;
 }
 
 button:hover {
