@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const path = require('path');
+const session = require('express-session');
 const { testConnection } = require('./src/config/db');
 const app = express();
 const port = 3000;
@@ -8,9 +9,15 @@ const port = 3000;
 // Middleware pour parser les requêtes JSON
 app.use(express.json());
 
+// Configurer les sessions
+app.use(session({
+    secret: process.env.SESSION_SECRET || 'your_secret_key',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false } // Utilisez true en production avec HTTPS
+}));
 
 app.use('/items', express.static(path.join(__dirname, 'src/data/items')));
-
 // Middleware pour servir les fichiers statiques
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -21,7 +28,6 @@ const newsRouter = require('./src/routes/newsRoutes');
 const accountRouter = require('./src/routes/accountRoutes');
 const collectionRouter = require('./src/routes/collectionRoutes');
 const sneakersRouter = require('./src/routes/sneakersRoutes');
-
 
 // Utilisation des routeurs
 app.use('/', homeRouter);

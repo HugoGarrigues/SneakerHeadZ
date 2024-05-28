@@ -12,13 +12,16 @@ router.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'views', 'register.html'));
 });
 
+// Route pour obtenir les informations de l'utilisateur
 router.get('/info', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'views', 'info.html'));
 });
 
+// Route pour obtenir les informations de l'utilisateur (API)
+router.get('/api/user', accountController.getUserInfo);
+
 // Routes pour les actions de connexion et d'inscription
 router.post('/login', accountController.login);
 router.post('/register', accountController.register);
-
 
 module.exports = router;
