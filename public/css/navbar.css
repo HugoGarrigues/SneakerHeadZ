@@ -16,7 +16,6 @@ nav {
     color: white;
     }
 
-
     /* todo script js pour changer la police en fonction de la page active */
 
     #nav-div-1 a{
@@ -24,10 +23,16 @@ nav {
     }
 
     #nav-div-2 {
-        margin-right: 100px;
+    margin-right: 230px;
     }
 
     #nav-div-3 a{
-    margin-right: 25px;
+    margin-right: 20px;
     }
+
+    #nav-div-3 img {
+    width: 30px;
+    }
+
+
 
