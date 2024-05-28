@@ -39,16 +39,16 @@
 
     <section id="sneakers-section">
         <div id="sneakers-img">
-            <img src="/img/sneakers/AJ12.png" alt="Air Jordan 1 High OG Lost & Found">
+            <img src="" alt="" id="img_1">
         </div>
         <div id="sneakers-details">
-            <h1>Air Jordan 1 High OG Lost & Found</h1>
-            <p>The “Lost & Found” features a faux crumbled black leather collar that nods to the fact that the OG Jordan 1’s collar has a tendency to crumble with age. Faux cracking is also present on the toe, mid-panel, and collar.</p>
+            <h1 id="name"></h1>
+            <p id="description"></p>
 
             <div class="sneaker-price-date">
-                <p class="sneaker-price">Prix Retail :</p>
-                <p class="sneaker-date">11/04/2024</p>
-                <p class="sneaker-color">red</p>
+                <p class="sneaker-price" id="price">Prix Retail :</p>
+                <p class="sneaker-date" id="date"></p>
+                <p class="sneaker-color" id="color"></p>
                 <img src="/img/vector/heart.svg" alt="">
             </div>
 
@@ -65,7 +65,7 @@
 
     <section id="sneakers-section">
         <div id="sneakers-img">
-            <img src="/img/sneakers/AJ13.png" alt="Air Jordan 1 High OG Lost & Found">
+            <img src="" alt="" id="img_2">
         </div>
         <div id="sneakers-details">
 
@@ -107,6 +107,42 @@
 
     </section>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pathArray = window.location.pathname.split('/');
+            const sneakerId = pathArray[pathArray.length - 1];  // Obtient le dernier élément du chemin, qui devrait être l'ID
+    
+            if (!sneakerId) {
+                alert('No sneaker ID provided!');
+                return;
+            }
+    
+            fetch(`/sneakers/api/${sneakerId}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Sneaker not found');
+                    }
+                    return response.json();
+                })
+                .then(sneaker => {
+                    document.getElementById('name').textContent = sneaker.name;
+                    document.getElementById('description').textContent = sneaker.description;
+                    document.getElementById('price').textContent = `Prix Retail : ${sneaker.price_drop}€`;
+                    document.getElementById('date').textContent = `Date de sortie : ${sneaker.date_drop}`;
+                    document.getElementById('color').textContent = `Couleur : ${sneaker.color}`;
+                    document.getElementById('img_1').src = sneaker.img_1;
+                    document.getElementById('img_2').src = sneaker.img_2;
+                })
+                .catch(error => {
+                    console.error('Error fetching sneaker details:', error);
+                    alert('Failed to load sneaker details');
+                });
+        });
+    </script>
+    
+    
+    
+    
 
     
 </body>
