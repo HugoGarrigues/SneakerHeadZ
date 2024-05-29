@@ -40,7 +40,19 @@
 
 
     <div class="container">
-    
+
+        <!-- Header -->
+        <div class="header">
+            <div class="sort-options">
+                <p>Trier par</p>
+                <button>Dernières Sorties</button>
+                <button>Plus Populaires</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Quelle paire recherches-tu ?">
+            </div>
+        </div>
+
         <!-- Sidebar -->
         <div class="sidebar">
             <div class="filters-brand">
@@ -60,41 +72,34 @@
                 <label><input type="checkbox" name="air_jordan_5"> Air Jordan 5</label>
             </div>
         </div>
-        <!-- Main Content -->
+
+     <!-- Main Content -->
         <div class="main-content">
-            <div class="header">
-                <div class="sort-options">
-                    <p>Trier par</p>
-                    <button>Dernières Sorties</button>
-                    <button>Plus Populaires</button>
-                </div>
-                <div class="search-bar">
-                    <input type="text" placeholder="Quelle paire recherches-tu ?">
-                </div>
-            </div>
-            <div class="sneaker-list" id="sneaker-list">
 
-                <!-- Sneaker card template -->
-                <div class="sneaker-item" id="sneaker-template" style="display: none;">
-                    <img src="" alt="Sneaker Image">
-                    <div class="sneaker-info">
-                        <h3>Sneaker Name</h3>
-                        <p>À partir de <span class="sneaker-price">0€</span><br><span class="sneaker-date">Date</span></p>
-                    </div>
-                </div>
+            <div id="sneaker-list" class="sneaker-list">
+            </div>
 
-            </div>
-            <div class="pagination">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <!-- todo script js pour calculer le nombre de paires restantes pour pagination -->
-            </div>
+
         </div>
+
+            <!-- footer-pagination -->
+
+    <div class="pagination">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <!-- todo script js pour calculer le nombre de paires restantes pour pagination -->
     </div>
+
+    </div>
+
+
+
+    
     <script>
+
         document.addEventListener('DOMContentLoaded', function() {
             fetch('/collection/api/sneakers')
                 .then(response => response.json())
@@ -108,6 +113,7 @@
                     sneakerElement.className = 'sneaker-item';
                     sneakerElement.innerHTML = `
                         <img src="${sneaker.img_1}" alt="Sneaker Image">
+
                         <div class="sneaker-info">
                             <h3>${sneaker.name}</h3>
                             <p>À partir de ${sneaker.price_drop}€<br><span class="sneaker-date">${sneaker.date_drop}</span></p>
@@ -117,6 +123,7 @@
                 });
             }
         });
+        
     </script>
 </body>
 </html>
