@@ -32,19 +32,26 @@
         </div>
     </nav>
 
+    
+
     <div class="wishlist-container">
+
         <h1>Wishlist</h1>
 
-        <div id="wishlist-items"></div>
+        <div id="wishlist-items">
+            
+        </div>
         <!-- Template pour les items de la wishlist -->
         <div id="wishlist-item-template" class="wishlist-item" style="display: none;">
+            <div>
             <img src="" alt="Sneaker Image">
+            </div>
             <div class="item-details">
                 <p class="item-name"></p>
                 <p class="item-subtitle"></p>
             </div>
             <div class="item-actions">
-                <button class="remove">×</button>
+                    <img class="remove" src="/img/vector/heart-filled.svg" alt="Supprimer de la wishlist">
             </div>
         </div>
 
@@ -68,7 +75,7 @@
                 .then(data => {
                     if (!data.authenticated) {
                         console.log('Utilisateur non authentifié');
-                        document.getElementById('wishlist-empty').style.display = 'block';
+                        document.getElementById('wishlist-empty').style.display = 'flex';
                         return;
                     }
 
@@ -77,12 +84,12 @@
                         .then(data => displayWishlist(data))
                         .catch(error => {
                             console.error('Erreur lors de la récupération de la wishlist:', error);
-                            document.getElementById('wishlist-empty').style.display = 'block';
+                            document.getElementById('wishlist-empty').style.display = 'flex';
                         });
                 })
                 .catch(error => {
                     console.error('Erreur lors de la vérification de l\'authentification:', error);
-                    document.getElementById('wishlist-empty').style.display = 'block';
+                    document.getElementById('wishlist-empty').style.display = 'flex';
                 });
 
             function displayWishlist(items) {
@@ -91,19 +98,19 @@
 
                 if (!template) {
                     console.error('Template not found');
-                    document.getElementById('wishlist-empty').style.display = 'block';
+                    document.getElementById('wishlist-empty').style.display = 'flex';
                     return;
                 }
 
                 if (items.length === 0) {
-                    document.getElementById('wishlist-empty').style.display = 'block';
+                    document.getElementById('wishlist-empty').style.display = 'flex';
                     return;
                 }
 
                 document.getElementById('wishlist-empty').style.display = 'none';
                 items.forEach(item => {
                     const clone = template.cloneNode(true);
-                    clone.style.display = 'block';
+                    clone.style.display = 'flex';
                     clone.querySelector('img').src = item.img_1;
                     clone.querySelector('.item-name').textContent = item.mark;
                     clone.querySelector('.item-subtitle').textContent = item.name;
