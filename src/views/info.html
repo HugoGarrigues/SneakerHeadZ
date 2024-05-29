@@ -25,7 +25,6 @@
             <a href="/account/info"><img src="/img/vector/user.svg" alt=""></a>
         </div>
     </nav>
-
     <section id="login">
         <div class="login-container">
             <div class="login-form">
@@ -35,13 +34,12 @@
                     <p id="name"></p>
                     <p id="prenom"></p>
                     <p id="email"></p>
-                    <button type="submit">Se Déconnecter</button>
+                    <button type="button" id="logoutButton">Se Déconnecter</button>
                 </form>
             </div>
             <div class="login-image"></div>
         </div>
     </section>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             fetch('/account/api/user')
@@ -58,8 +56,25 @@
                     }
                 })
                 .catch(error => console.error('Erreur lors de la récupération des informations utilisateur:', error));
+
+            document.getElementById('logoutButton').addEventListener('click', function() {
+                fetch('/account/logout', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.message === 'Déconnexion réussie') {
+                        window.location.href = '/';
+                    } else {
+                        alert('Erreur lors de la déconnexion');
+                    }
+                })
+                .catch(error => console.error('Erreur lors de la déconnexion:', error));
+            });
         });
     </script>
-
 </body>
 </html>

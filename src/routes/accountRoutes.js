@@ -29,8 +29,16 @@ router.get('/api/user', accountController.getUserInfo);
 router.post('/login', accountController.login);
 router.post('/register', accountController.register);
 
-
 router.get('/api/checkAuth', accountController.checkAuth);
 
+// Route pour déconnecter l'utilisateur
+router.post('/logout', (req, res) => {
+    req.session.destroy((err) => {
+        if (err) {
+            return res.status(500).json({ message: 'Erreur lors de la déconnexion' });
+        }
+        res.json({ message: 'Déconnexion réussie' });
+    });
+});
 
 module.exports = router;
