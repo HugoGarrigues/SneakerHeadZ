@@ -344,13 +344,13 @@
         {
             "id" : 32,
             "mark" : "Nike",
-            "name" : "Nike Dunk Low Retro White Black",
-            "price_drop" : 100,
-            "date_drop" : "04/06/2021",
-            "color" : "White/Black",
-            "description" : "La Nike Dunk Low Retro White Black est sortie le 4 juin 2021, notamment sur Nike.com et chez certains détaillants au tarif habituel de 100€. Elle est désormais disponible à travers les marketplaces listées sur cette page. Attention, il s’agit de l’une des dunks qui côte le plus dernièrement. Vous pouvez également vous rabattre vers l’un des nombreux coloris proches que la marque a sorti plus récemment. Bon cop !",
-            "img_1" : "/items/nike-dunk-low-retro-white-black_1.jpeg",
-            "img_2" : "/items/nike-dunk-low-retro-white-black_2.jpeg"
+            "name" : "Nike Dunk Low Team Green",
+            "price_drop" : 120,
+            "date_drop" : "29/05/2024",
+            "color" : "White/Green",
+            "description" : "Le déferlement de Nike Dunk Low se poursuit donc en ce début d’année avec l’arrivée du coloris “Team Green”. Affichant un color blocking des plus familiers, la silhouette de Peter Moore est ici pourvue d’une empeigne en cuir blanc. On distingue ensuite des superpositions en cuir vert bouteille, ainsi que d’autres éléments assortis comme les lacets plats. Un tag rétro apposé sur la languette, une broderie Nike sur les talons, ainsi qu’une semelle blanche combinée à une outsole vert bouteille, couronne l’ensemble.",
+            "img_1" : "/items/nike-dunk-low-team-green_1.jpg",
+            "img_2" : "/items/nike-dunk-low-team-green_2.jpg"
         },
         {
             "id" : 33,
