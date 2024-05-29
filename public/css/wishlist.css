@@ -68,6 +68,9 @@ h1 {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;;
+}
 
 #wishlist-empty {
     display: flex;

@@ -32,32 +32,29 @@
         </div>
     </nav>
 
-    
-
     <div class="wishlist-container">
 
         <h1>Wishlist</h1>
 
-        <div id="wishlist-items">
-            
-        </div>
+        <div id="wishlist-items"></div>
+        
         <!-- Template pour les items de la wishlist -->
         <div id="wishlist-item-template" class="wishlist-item" style="display: none;">
             <div>
-            <img src="" alt="Sneaker Image">
+                <img src="" alt="Sneaker Image">
             </div>
             <div class="item-details">
                 <p class="item-name"></p>
                 <p class="item-subtitle"></p>
             </div>
             <div class="item-actions">
-                    <img class="remove" src="/img/vector/heart-filled.svg" alt="Supprimer de la wishlist">
+                <img class="remove" src="/img/vector/heart-filled.svg" alt="Supprimer de la wishlist">
             </div>
         </div>
 
         <div id="wishlist-empty" style="display: none;">
             <div id="part-1">
-                <h1>Votre liste de likes est vide </h1> 
+                <h1>Votre liste de likes est vide</h1> 
                 <img src="/img/vector/heart.svg" alt="">
             </div>
             <p>Connectez-vous et / ou ajoutez des produits à votre liste.</p>
@@ -115,12 +112,16 @@
                     clone.querySelector('.item-name').textContent = item.mark;
                     clone.querySelector('.item-subtitle').textContent = item.name;
 
-                    // Bouton pour supprimer de la wishlist
-                    clone.querySelector('.remove').addEventListener('click', function() {
+                    const removeButton = clone.querySelector('.remove');
+                    removeButton.addEventListener('click', function(event) {
+                        event.stopPropagation();
                         removeFromWishlist(item.id);
                     });
 
-                    list.appendChild(clone);
+                    const linkWrapper = document.createElement('a');
+                    linkWrapper.href = `/sneakers/${item.id}`;
+                    linkWrapper.appendChild(clone);
+                    list.appendChild(linkWrapper);
                 });
             }
 
