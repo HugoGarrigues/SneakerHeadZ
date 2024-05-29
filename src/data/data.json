@@ -395,6 +395,28 @@
             "description" : "Cette seconde déclinaison de la Air Max 95 revisitée par Clint419 reprend les mêmes éléments de design que la Sequoia. En effet, elle se pare d’une conception en cuir avec des superpositions dans des teintes noire, grise et violette, et accompagnées d’un filet. Ce dernier s’accorde à la languette et la semelle tandis que des accents roses fluos prennent place au niveau des brandings Corteiz, du swoosh et du logo Alcatraz. Qui plus est, ils habillent également l’unité Air-Sole. Enfin, une doublure assortie aux insoles au motif camo dans des tons verts et gris, un lace lock, des finitions en 3M réfléchissant et des coordonnées GPS sur les talons peaufinent le look de la paire.",
             "img_1" : "/items/corteiz-nike-air-max-95-pink-beam_1.jpeg",
             "img_2" : "/items/corteiz-nike-air-max-95-pink-beam_2.jpeg"
+        },
+        {
+            "id" : 37,
+            "mark" : "Converse",
+            "name" : "Stüssy x Converse Chuck 70 8-Ball",
+            "price_drop" : 110,
+            "date_drop" : "15/11/2022",
+            "color" : "Sargasso Sea/White/Black",
+            "description" : "L’iconique silhouette montante se voit donc à nouveau revisitée par Stüssy sur le thème de son fameux motif “8-Ball”. Elle affiche un upper en hairy suede bleu orné de la boule de billard sur les panneaux extérieurs. Le patch à l’effigie du logo Chuck Taylor, quant à lui, est disposé sur la doublure intérieure. On retrouve aussi le branding Stüssy sur le verso de la languette et un logo Stüssy All Star sur le recto. Des oeillets métalliques, une midsole blanche et une gumsole parachèvent le design.",
+            "img_1" : "/items/Stüssy x Converse Chuck 70 8-Ball_1.jpeg",
+            "img_2" : "/items/Stüssy x Converse Chuck 70 8-Ball_2.jpeg"
+        },
+        {
+            "id" : 38,
+            "mark" : "Puma",
+            "name" : "Pokémon x PUMA TRC Blaze Court Ectoplasma",
+            "price_drop" : 130,
+            "date_drop" : "12/11/2022",
+            "color" : "Electric Purple/Fiery Red",
+            "description" : "La marque au félin et la franchise de Satoshi Tajiri nous proposent une TRC Blaze Court inspirée du personnage Ectoplasma. La silhouette affiche ainsi un upper violet en suede et mesh, contrasté par des accents de rouge et de noir, le tout finalisé par une midsole blanche. On retrouve la tête d’Ectoplasma sur le hangtag et la languette, alors que la collection Puma x Pokémon se compose aussi d’une Rider FV Bulbizarre, d’une Suede Squirtle Carapuce, d’une Slipstream Lo Salamèche, d’une Rider FV et d’une RS-X Pikachu.",
+            "img_1" : "/items/Pokémon x PUMA TRC Blaze Court Ectoplasma_1.jpg",
+            "img_2" : "/items/Pokémon x PUMA TRC Blaze Court Ectoplasma_2.jpg"
         }
     ]
 }
