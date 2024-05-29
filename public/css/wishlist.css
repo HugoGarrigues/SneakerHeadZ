@@ -49,6 +49,11 @@ h1 {
 
 }
 
+.wishlist-link {
+    display: flex;
+    align-items: center;
+}
+
 .item-actions {
     display: flex;
     align-items: center;

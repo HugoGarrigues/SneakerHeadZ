@@ -40,13 +40,15 @@
         
         <!-- Template pour les items de la wishlist -->
         <div id="wishlist-item-template" class="wishlist-item" style="display: none;">
-            <div>
-                <img src="" alt="Sneaker Image">
-            </div>
-            <div class="item-details">
-                <p class="item-name"></p>
-                <p class="item-subtitle"></p>
-            </div>
+            <a href="#" class="wishlist-link">
+                <div>
+                    <img src="" alt="Sneaker Image">
+                </div>
+                <div class="item-details">
+                    <p class="item-name"></p>
+                    <p class="item-subtitle"></p>
+                </div>
+            </a>
             <div class="item-actions">
                 <img class="remove" src="/img/vector/heart-filled.svg" alt="Supprimer de la wishlist">
             </div>
@@ -108,9 +110,11 @@
                 items.forEach(item => {
                     const clone = template.cloneNode(true);
                     clone.style.display = 'flex';
-                    clone.querySelector('img').src = item.img_1;
-                    clone.querySelector('.item-name').textContent = item.mark;
-                    clone.querySelector('.item-subtitle').textContent = item.name;
+                    const link = clone.querySelector('.wishlist-link');
+                    link.href = `/sneakers/${item.id}`;
+                    link.querySelector('img').src = item.img_1;
+                    link.querySelector('.item-name').textContent = item.mark;
+                    link.querySelector('.item-subtitle').textContent = item.name;
 
                     const removeButton = clone.querySelector('.remove');
                     removeButton.addEventListener('click', function(event) {
@@ -118,10 +122,7 @@
                         removeFromWishlist(item.id);
                     });
 
-                    const linkWrapper = document.createElement('a');
-                    linkWrapper.href = `/sneakers/${item.id}`;
-                    linkWrapper.appendChild(clone);
-                    list.appendChild(linkWrapper);
+                    list.appendChild(clone);
                 });
             }
 
