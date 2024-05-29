@@ -3,6 +3,7 @@ footer {
     color: #ffffff;
     padding: 40px 0;
     margin-top: 5%;
+    text-align: center;
 }
 
 .footer-content {
@@ -22,7 +23,7 @@ footer {
 }
 
 .footer-title h2 span {
-    color: #e74c3c;
+    color: #DF1832;
 }
 
 #left{
