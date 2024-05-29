@@ -11,10 +11,10 @@
 </head>
 <body>
 
-     <!-- NAVBAR -->
-      <nav>
+    <!-- NAVBAR -->
+    <nav>
         <div id="nav-div-1">
-            <a  href="/">Home</a>
+            <a href="/">Home</a>
             <a id="a" href="/collection">Releases</a>
             <a href="/news">News</a>
         </div>
@@ -34,10 +34,7 @@
     </nav> 
 
     <!-- Second Navbar -->
-    <div id="test">
-
-    </div>
-
+    <div id="test"></div>
 
     <div class="container">
 
@@ -45,11 +42,10 @@
         <div class="header">
             <div class="sort-options">
                 <p>Trier par</p>
-                <button>Dernières Sorties</button>
-                <button>Plus Populaires</button>
+                <button id="sort-recent">Dernières Sorties</button>
             </div>
             <div class="search-bar">
-                <input type="text" placeholder="Quelle paire recherches-tu ?">
+                <input type="text" id="search-input" placeholder="Quelle paire recherches-tu ?">
             </div>
         </div>
 
@@ -57,63 +53,76 @@
         <div class="sidebar">
             <div class="filters-brand">
                 <h2>Marques</h2>
-                <label><input type="checkbox" name="nike"> Nike</label>
-                <label><input type="checkbox" name="adidas"> Adidas</label>
-                <label><input type="checkbox" name="new_balance"> New Balance</label>
-                <label><input type="checkbox" name="air_jordan" checked> Air Jordan</label>
-                <label><input type="checkbox" name="converse"> Converse</label>
-            </div>
-            <div class="filters-models">
-                <h2>Modèles</h2>
-                <label><input type="checkbox" name="air_jordan_1" checked> Air Jordan 1</label>
-                <label><input type="checkbox" name="air_jordan_2"> Air Jordan 2</label>
-                <label><input type="checkbox" name="air_jordan_3"> Air Jordan 3</label>
-                <label><input type="checkbox" name="air_jordan_4"> Air Jordan 4</label>
-                <label><input type="checkbox" name="air_jordan_5"> Air Jordan 5</label>
+                <label><input type="checkbox" name="brand" value="Nike"> Nike</label>
+                <label><input type="checkbox" name="brand" value="Adidas"> Adidas</label>
+                <label><input type="checkbox" name="brand" value="New Balance"> New Balance</label>
+                <label><input type="checkbox" name="brand" value="Puma"> Puma</label>
+                <label><input type="checkbox" name="brand" value="Converse"> Converse</label>
             </div>
         </div>
 
-     <!-- Main Content -->
+        <!-- Main Content -->
         <div class="main-content">
-
-            <div id="sneaker-list" class="sneaker-list">
-            </div>
-
-
+            <div id="sneaker-list" class="sneaker-list"></div>
         </div>
-
-            <!-- footer-pagination -->
-
-    <div class="pagination">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <!-- todo script js pour calculer le nombre de paires restantes pour pagination -->
     </div>
 
-    </div>
-
-
-
-    
     <script>
-
         document.addEventListener('DOMContentLoaded', function() {
+            let sneakersData = [];
+            let filteredSneakers = [];
+
             fetch('/collection/api/sneakers')
                 .then(response => response.json())
-                .then(data => displaySneakers(data))
+                .then(data => {
+                    sneakersData = data;
+                    filteredSneakers = data;
+                    displaySneakers(filteredSneakers);
+                })
                 .catch(error => console.error('Erreur lors de la récupération des sneakers:', error));
-        
+
+            document.getElementById('sort-recent').addEventListener('click', function() {
+                filteredSneakers = filteredSneakers.slice().sort((a, b) => parseDate(b.date_drop) - parseDate(a.date_drop));
+                displaySneakers(filteredSneakers);
+            });
+
+            document.getElementById('search-input').addEventListener('input', function() {
+                filterSneakers();
+            });
+
+            document.querySelectorAll('input[name="brand"]').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    filterSneakers();
+                });
+            });
+
+            function filterSneakers() {
+                const selectedBrands = Array.from(document.querySelectorAll('input[name="brand"]:checked')).map(cb => cb.value);
+                const searchQuery = document.getElementById('search-input').value.toLowerCase();
+
+                filteredSneakers = sneakersData.filter(sneaker => {
+                    const matchesBrand = selectedBrands.length === 0 || selectedBrands.includes(sneaker.mark);
+                    const matchesSearch = sneaker.name.toLowerCase().includes(searchQuery);
+                    return matchesBrand && matchesSearch;
+                });
+
+                displaySneakers(filteredSneakers);
+            }
+
+            function parseDate(dateStr) {
+                const [day, month, year] = dateStr.split('.').map(Number);
+                return new Date(year, month - 1, day);
+            }
+
             function displaySneakers(sneakers) {
                 const list = document.getElementById('sneaker-list');
+                list.innerHTML = '';
                 sneakers.forEach(sneaker => {
-                    const sneakerElement = document.createElement('div');
+                    const sneakerElement = document.createElement('a');
+                    sneakerElement.href = `/sneakers/${sneaker.id}`;
                     sneakerElement.className = 'sneaker-item';
                     sneakerElement.innerHTML = `
                         <img src="${sneaker.img_1}" alt="Sneaker Image">
-
                         <div class="sneaker-info">
                             <h3>${sneaker.name}</h3>
                             <p>À partir de ${sneaker.price_drop}€<br><span class="sneaker-date">${sneaker.date_drop}</span></p>
@@ -123,7 +132,7 @@
                 });
             }
         });
-        
     </script>
+    
 </body>
 </html>
