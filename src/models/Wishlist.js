@@ -1,7 +1,15 @@
 const { Model, DataTypes } = require('sequelize');
 const { sequelize } = require('../config/db');
 
-class Wishlist extends Model {}
+class Wishlist extends Model {
+    static async countSneakerWishlists() {
+        const results = await sequelize.query(
+            'SELECT IdSneaker, COUNT(*) as count FROM wishlist GROUP BY IdSneaker',
+            { type: sequelize.QueryTypes.SELECT }
+        );
+        return results;
+    }
+}
 
 Wishlist.init({
     IdWishlist: {

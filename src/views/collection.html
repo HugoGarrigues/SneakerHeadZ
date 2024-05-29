@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="/css/collection.css">
 </head>
 <body>
-
     <!-- NAVBAR -->
     <nav>
         <div id="nav-div-1">
@@ -18,11 +17,9 @@
             <a id="a" href="/collection">Releases</a>
             <a href="/news">News</a>
         </div>
-
         <div id="nav-div-2">
             <img src="/img/vector/logo.svg" alt="logo_SneakerHead">
         </div>
-
         <div id="nav-div-3">
             <a href="/wishlist">
             <img src="/img/vector/heart.svg" alt="">
@@ -32,23 +29,20 @@
             </a>
         </div>
     </nav> 
-
     <!-- Second Navbar -->
     <div id="test"></div>
-
     <div class="container">
-
         <!-- Header -->
         <div class="header">
             <div class="sort-options">
                 <p>Trier par</p>
                 <button id="sort-recent">Dernières Sorties</button>
+                <button id="sort-popular">Les plus populaires</button>
             </div>
             <div class="search-bar">
                 <input type="text" id="search-input" placeholder="Quelle paire recherches-tu ?">
             </div>
         </div>
-
         <!-- Sidebar -->
         <div class="sidebar">
             <div class="filters-brand">
@@ -60,17 +54,16 @@
                 <label><input type="checkbox" name="brand" value="Converse"> Converse</label>
             </div>
         </div>
-
         <!-- Main Content -->
         <div class="main-content">
             <div id="sneaker-list" class="sneaker-list"></div>
         </div>
     </div>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             let sneakersData = [];
             let filteredSneakers = [];
+            let popularityData = [];
 
             fetch('/collection/api/sneakers')
                 .then(response => response.json())
@@ -81,8 +74,24 @@
                 })
                 .catch(error => console.error('Erreur lors de la récupération des sneakers:', error));
 
+            fetch('/collection/api/sneakers/popularity')
+                .then(response => response.json())
+                .then(data => {
+                    popularityData = data;
+                })
+                .catch(error => console.error('Erreur lors de la récupération des données de popularité:', error));
+
             document.getElementById('sort-recent').addEventListener('click', function() {
                 filteredSneakers = filteredSneakers.slice().sort((a, b) => parseDate(b.date_drop) - parseDate(a.date_drop));
+                displaySneakers(filteredSneakers);
+            });
+
+            document.getElementById('sort-popular').addEventListener('click', function() {
+                filteredSneakers = filteredSneakers.slice().sort((a, b) => {
+                    const popularityA = popularityData.find(item => item.IdSneaker === a.id)?.count || 0;
+                    const popularityB = popularityData.find(item => item.IdSneaker === b.id)?.count || 0;
+                    return popularityB - popularityA;
+                });
                 displaySneakers(filteredSneakers);
             });
 
@@ -99,13 +108,11 @@
             function filterSneakers() {
                 const selectedBrands = Array.from(document.querySelectorAll('input[name="brand"]:checked')).map(cb => cb.value);
                 const searchQuery = document.getElementById('search-input').value.toLowerCase();
-
                 filteredSneakers = sneakersData.filter(sneaker => {
                     const matchesBrand = selectedBrands.length === 0 || selectedBrands.includes(sneaker.mark);
                     const matchesSearch = sneaker.name.toLowerCase().includes(searchQuery);
                     return matchesBrand && matchesSearch;
                 });
-
                 displaySneakers(filteredSneakers);
             }
 
@@ -133,6 +140,5 @@
             }
         });
     </script>
-    
 </body>
 </html>
