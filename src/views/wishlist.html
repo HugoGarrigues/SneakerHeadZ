@@ -128,7 +128,6 @@
                 .then(response => response.json())
                 .then(data => {
                     if (!data.authenticated) {
-                        console.log('Utilisateur non authentifié');
                         document.getElementById('wishlist-empty').style.display = 'flex';
                         return;
                     }

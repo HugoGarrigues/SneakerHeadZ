@@ -196,7 +196,6 @@
             // Ajouter un événement au bouton pour ajouter à la wishlist
             document.getElementById('add-to-wishlist').addEventListener('click', async function() {
                 if (!isAuthenticated) {
-                    console.log('Vous devez être connecté pour ajouter à la wishlist');
                     return;
                 }
                 try {
@@ -212,7 +211,6 @@
                     if (data.success) {
                         document.getElementById('wishlist-icon').src = '/img/vector/heart-filled.svg';
                     } else {
-                        console.log('Erreur: ' + data.message);
                     }
                 } catch (error) {
                     console.error('Erreur:', error);
@@ -238,7 +236,6 @@
                 })
                 .catch(error => {
                     console.error('Error fetching sneaker details:', error);
-                    console.log('Failed to load sneaker details');
                 });
         });
     </script>
