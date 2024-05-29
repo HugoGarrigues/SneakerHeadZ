@@ -2,10 +2,24 @@
     "news": [
         {
             "id": 1,
-            "title": "La Air Jordan 1 Low OG Year of the Snake célèbre le Nouvel An chinois",
-            "content": "Dictée par l’astrologie chinoise, l’année 2025 sera celle du serpent de bois. On peut donc s’attendre à une riche collection inspirée par cette créature légendaire, à l’image de 2024 représentée par le dragon de bois. Retrouvez dès maintenant notre sélection des plus belles versions Year Of Dragon, mention spéciale à l’incroyable AF1.",
-            "date": "19/04/2022",
-            "photo": "/items/news1.jpg"
+            "title": "L’arrivée d’une Nike Zoom Vomero 5 Cool Grey se précise",
+            "content": "La paire, initialement introduite en 2010, adopte ici une conception alliant mesh et cuir, dans une teinte quasi grise et argentée. À la fois sportive et lifestyle, la dad shoe présente ses fameuses découpes géométriques ainsi qu’une semelle Cushlon. Tenez-vous prêts, l’avalanche de Nike Zoom Vomero 5 devrait continuer tout au long de l’année ! La release de la Nike Zoom Vomero 5 Cool Grey se tiendra sur Nike.com et chez quelques stockists, aux alentours de 160€.",
+            "date": "03/04/2024",
+            "photo": "/items/news1.png"
+        },
+        {
+            "id": 2,
+            "title": "Une atmos x New Balance 580 Wood Escape à venir ?",
+            "content": "Après la NB 550 et la NB 2002R , les deux compères imaginent une version outdoor de la New Balance 580. Cette dernière bénéficie d’une robuste construction en mesh et cuir déclinée en gris, noir et marron. Un mashup nocturne contrasté par l’ajout d’un logo “N” bleu ciel également doté d’une finition réfléchissante. On remarque enfin un branding New Balance apposé sur une languette pelucheuse. Pour le moment, aucune information n’indique si la atmos x New Balance 580 Wood Escape est une exclusivité japonaise ou si elle connaîtra une release mondiale. Stay tuned ! ",
+            "date": "non communiqué",
+            "photo": "/items/news2.webp"
+        },
+        {
+            "id": 3,
+            "title": "Travis Scott imagine une Air Jordan 1 Low OG Dark Pony",
+            "content": "Après nous avoir déjà dévoilé trois coloris pour l’année prochaine, le duo nous balance sa nouvelle Air Jordan 1 au goût sucré. Celle-ci présente un look rappelant la Neapolitan ice cream grâce à sa combinaison fraise, chocolat et vanille. À l’image des précédentes propositions, une base en nubuck se joint à l’ensemble suivie de cuir blanc et d’un reverse swoosh rose bonbon. Dans cette continuité, les logos Cactus Jack et Jordan garnissent les talons alors que les lacets et la semelle s’illustrent à travers une combinaison jaunie. À noter que l’artiste de Houston dynamise davantage ses propositions printanières avec également une AJ1 Low OG Shy Pink .",
+            "date": "2025",
+            "photo": "/items/news3.webp"
         }
     ]
 }

@@ -30,11 +30,15 @@
             </a>
         </div>
     </nav>
-    <div id="title">
-        <h1>News</h1>
-        <p>Apprends en plus sur les sneakers qui arrivent</p>
-    </div>
-    <section id="container-news"></section>
+
+
+
+    <section id="sneakers-section">
+
+    </section>
+
+
+    
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -50,18 +54,20 @@
                     return response.json();
                 })
                 .then(news => {
-                    const container = document.getElementById('container-news');
+                    const container = document.getElementById('sneakers-section');
                     const newsCard = `
-                        <div class="news-card">
-                            <div class="news-photo">
-                                <img src="${news.photo}" alt="${news.title}">
-                            </div>
-                            <div class="news-info">
-                                <h2>${news.title}</h2>
-                                <p>${news.content}</p>
-                                <p id="date">${news.date}</p>
+                        <div id="sneakers-img">
+                            <img src="${news.photo}" alt="${news.title}" id="img_1">
+                        </div>
+                        <div id="sneakers-details">
+                            <h1 id="name">${news.title}</h1>
+                            <p id="description">${news.content}</p>
+
+                            <div class="sneaker-price-date">
+                                <p class="sneaker-date" id="date"> Date de sortie : ${news.date}</p>  
                             </div>
                         </div>
+
                     `;
                     container.innerHTML = newsCard;
                 })
