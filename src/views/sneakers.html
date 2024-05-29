@@ -205,6 +205,7 @@
                     document.getElementById('date').textContent = `Date de sortie : ${sneaker.date_drop}`;
                     document.getElementById('color').textContent = `Couleur : ${sneaker.color}`;
                     document.getElementById('img_1').src = sneaker.img_1;
+                    document.getElementById('img_2').src = sneaker.img_2;
                 })
                 .catch(error => {
                     console.error('Error fetching sneaker details:', error);
