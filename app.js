@@ -18,6 +18,7 @@ app.use(session({
 }));
 
 app.use('/items', express.static(path.join(__dirname, 'src/data/items')));
+
 // Middleware pour servir les fichiers statiques
 app.use(express.static(path.join(__dirname, 'public')));
 

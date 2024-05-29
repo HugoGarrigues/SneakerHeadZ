@@ -49,7 +49,7 @@
                 <p class="sneaker-price" id="price">Prix Retail :</p>
                 <p class="sneaker-date" id="date"></p>
                 <p class="sneaker-color" id="color"></p>
-                <img src="/img/vector/heart.svg" alt="">
+                <button id="add-to-wishlist">Ajouter à la Wishlist</button>
             </div>
 
         </div>
@@ -107,16 +107,50 @@
 
     </section>
 
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const pathArray = window.location.pathname.split('/');
-            const sneakerId = pathArray[pathArray.length - 1];  // Obtient le dernier élément du chemin, qui devrait être l'ID
-    
-            if (!sneakerId) {
-                alert('No sneaker ID provided!');
-                return;
-            }
-    
+            const sneakerId = pathArray[pathArray.length - 1];
+            let isAuthenticated = false;
+
+            // Vérifier l'état de connexion
+            fetch('/account/api/checkAuth')
+                .then(response => response.json())
+                .then(data => {
+                    isAuthenticated = data.authenticated;
+                    if (!isAuthenticated) {
+                        document.getElementById('add-to-wishlist').disabled = true;
+                    }
+                })
+                .catch(error => console.error('Erreur lors de la vérification de l\'authentification:', error));
+
+            // Ajouter un événement au bouton pour ajouter à la wishlist
+            document.getElementById('add-to-wishlist').addEventListener('click', async function() {
+                if (!isAuthenticated) {
+                    alert('Vous devez être connecté pour ajouter à la wishlist');
+                    return;
+                }
+
+                try {
+                    const response = await fetch('/wishlist/api/add', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ sneakerId })
+                    });
+
+                    const data = await response.json();
+                    if (data.success) {
+                    } else {
+                        alert('Erreur: ' + data.message);
+                    }
+                } catch (error) {
+                    console.error('Erreur:', error);
+                }
+            });
+
             fetch(`/sneakers/api/${sneakerId}`)
                 .then(response => {
                     if (!response.ok) {
@@ -131,7 +165,6 @@
                     document.getElementById('date').textContent = `Date de sortie : ${sneaker.date_drop}`;
                     document.getElementById('color').textContent = `Couleur : ${sneaker.color}`;
                     document.getElementById('img_1').src = sneaker.img_1;
-                    document.getElementById('img_2').src = sneaker.img_2;
                 })
                 .catch(error => {
                     console.error('Error fetching sneaker details:', error);
@@ -139,11 +172,6 @@
                 });
         });
     </script>
-    
-    
-    
-    
-
     
 </body>
 </html>

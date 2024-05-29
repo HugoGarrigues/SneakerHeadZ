@@ -35,37 +35,108 @@
     <div class="wishlist-container">
         <h1>Wishlist</h1>
 
-        <div class="wishlist-card">
-            <div class="wishlist-item">
-                <img src="/img/sneakers/AJ12.png" alt="">
-                <div class="item-details">
-                    <p class="item-name">Air Jordan 1</p>
-                    <p class="item-subtitle">VALENTINE’S DAY</p>
-                </div>
-                <div class="item-actions">
-                    <button class="add">+</button>
-                    <button class="remove">×</button>
-                </div>
+        <div id="wishlist-items"></div>
+        <!-- Template pour les items de la wishlist -->
+        <div id="wishlist-item-template" class="wishlist-item" style="display: none;">
+            <img src="" alt="Sneaker Image">
+            <div class="item-details">
+                <p class="item-name"></p>
+                <p class="item-subtitle"></p>
+            </div>
+            <div class="item-actions">
+                <button class="remove">×</button>
             </div>
         </div>
 
-        <!-- <div id="wishlist-empty">
-
+        <div id="wishlist-empty" style="display: none;">
             <div id="part-1">
-
-            <h1>Votre liste de likes est vide </h1> <img src="/img/vector/heart.svg" alt="">
-
+                <h1>Votre liste de likes est vide </h1> 
+                <img src="/img/vector/heart.svg" alt="">
             </div>
-
-            <p>Connectez-vous ou ajoutez des produits à votre liste.</p>
-
+            <p>Connectez-vous et / ou ajoutez des produits à votre liste.</p>
             <button>
                 <a href="/collection">Découvrir</a>
             </button>
-
-        </div> -->
+        </div>
 
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Vérifier l'état de connexion
+            fetch('/account/api/checkAuth')
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.authenticated) {
+                        console.log('Utilisateur non authentifié');
+                        document.getElementById('wishlist-empty').style.display = 'block';
+                        return;
+                    }
+
+                    fetch('/wishlist/api/get')
+                        .then(response => response.json())
+                        .then(data => displayWishlist(data))
+                        .catch(error => {
+                            console.error('Erreur lors de la récupération de la wishlist:', error);
+                            document.getElementById('wishlist-empty').style.display = 'block';
+                        });
+                })
+                .catch(error => {
+                    console.error('Erreur lors de la vérification de l\'authentification:', error);
+                    document.getElementById('wishlist-empty').style.display = 'block';
+                });
+
+            function displayWishlist(items) {
+                const list = document.getElementById('wishlist-items');
+                const template = document.getElementById('wishlist-item-template');
+
+                if (!template) {
+                    console.error('Template not found');
+                    document.getElementById('wishlist-empty').style.display = 'block';
+                    return;
+                }
+
+                if (items.length === 0) {
+                    document.getElementById('wishlist-empty').style.display = 'block';
+                    return;
+                }
+
+                document.getElementById('wishlist-empty').style.display = 'none';
+                items.forEach(item => {
+                    const clone = template.cloneNode(true);
+                    clone.style.display = 'block';
+                    clone.querySelector('img').src = item.img_1;
+                    clone.querySelector('.item-name').textContent = item.mark;
+                    clone.querySelector('.item-subtitle').textContent = item.name;
+
+                    // Bouton pour supprimer de la wishlist
+                    clone.querySelector('.remove').addEventListener('click', function() {
+                        removeFromWishlist(item.id);
+                    });
+
+                    list.appendChild(clone);
+                });
+            }
+
+            function removeFromWishlist(sneakerId) {
+                fetch('/wishlist/api/remove', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ sneakerId })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        location.reload();
+                    } else {
+                        alert('Erreur: ' + data.message);
+                    }
+                })
+                .catch(error => console.error('Erreur:', error));
+            }
+        });
+    </script>
 
 </body>
 </html>

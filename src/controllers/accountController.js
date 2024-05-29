@@ -22,8 +22,8 @@ const register = async (req, res) => {
             email,
             motDePasse: hashedPassword
         });
-        req.session.user = { id: newUser.id, nom: newUser.nom, prenom: newUser.prenom, email: newUser.email };
-        res.status(201).json({ message: 'Utilisateur créé avec succès', userId: newUser.id });
+        req.session.user = { idUtilisateur: newUser.idUtilisateur, nom: newUser.nom, prenom: newUser.prenom, email: newUser.email };
+        res.status(201).json({ message: 'Utilisateur créé avec succès', userId: newUser.idUtilisateur });
     } catch (error) {
         console.error('Erreur lors de la création de l’utilisateur:', error);
         res.status(500).json({ message: 'Erreur lors de la création de l’utilisateur', error: error.message });
@@ -46,7 +46,7 @@ const login = async (req, res) => {
             console.log('Mot de passe incorrect');
             return res.status(401).json({ message: 'Mot de passe incorrect' });
         }
-        req.session.user = { id: user.id, nom: user.nom, prenom: user.prenom, email: user.email };
+        req.session.user = { idUtilisateur: user.idUtilisateur, nom: user.nom, prenom: user.prenom, email: user.email };
         res.json({ message: 'Connexion réussie', user: req.session.user });
     } catch (error) {
         console.error('Erreur lors de la connexion:', error);
@@ -62,8 +62,17 @@ const getUserInfo = (req, res) => {
     }
 };
 
+const checkAuth = (req, res) => {
+    if (req.session && req.session.user) {
+        res.json({ authenticated: true });
+    } else {
+        res.json({ authenticated: false });
+    }
+};
+
 module.exports = {
     register,
     login,
-    getUserInfo
+    getUserInfo,
+    checkAuth
 };
