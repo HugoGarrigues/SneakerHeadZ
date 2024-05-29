@@ -218,6 +218,27 @@
             "color" : "Pure",
             "img_1" : "/items/adidas Yeezy Boost 700 Wave Runner_1.jpeg",
             "img_2" : "/items/adidas Yeezy Boost 700 Wave Runner_2_jpeg"
+        },
+        {
+            "id" : 21,
+            "mark" : "Nike",
+            "name" : "Travis Scott x Air Jordan 1 Low OG Canary Elkins",
+            "price_drop" : 160,
+            "date_drop" : "30.05.2024",
+            "description" : "Après l’annonce d’une AJ1 Low OG Black Olive, le rappeur de Houston a imaginé un second coloris surnommé Elkins ou Canary. Celui-ci s’inspire du Elkins High School, un lycée public située au Texas où Travis a étudié.",
+            "img_1" : "/items/Travis Scott x Air Jordan 1 Low OG Canary Elkins_1.jpg",
+            "img_2" : "/items/Travis Scott x Air Jordan 1 Low OG Canary Elkins_2.jpg"
+
+        },
+        {
+            "id" : 22,
+            "mark" : "Nike",
+            "name" : "Air Jordan 4 Military Blue 2024",
+            "price_drop" : 210,
+            "date_drop" : "04.05.2024",
+            "description" : "Initialement sortie en 1989, cette Air Jordan 4 est l’un des quatre coloris OG du label. Elle a connu en 2006 et en 2012 une réédition proche de ses racines à l’exception du “Nike Air” sur le talon, remplacé par le Jumpman. Puis en 2021, la Military Blue a refait surface dans une version Golf, générant chez quelques adeptes de la frustration. À présent, les nouvelles sont différentes et il ne vous reste plus qu’à patienter le retour de cette silhouette intemporelle !",
+            "img_1" : "/items/Air Jordan 4 Military Blue 2024_1.jpg",
+            "img_2" : "/items/Air Jordan 4 Military Blue 2024_2.jpg"
         }
     ]
 }
