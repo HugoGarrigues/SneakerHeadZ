@@ -139,13 +139,13 @@
         </div>
 
         <div class="grid-container">
-            <div class="grid-item large">
+            <div class="grid-item large" data-id="1">
                 <img src="/img/sneakers/news1.png" alt="Sneaker 1">
             </div>
-            <div class="grid-item">
+            <div class="grid-item" data-id="2">
                 <img src="/img/sneakers/news2.webp" alt="Sneaker 2">
             </div>
-            <div class="grid-item">
+            <div class="grid-item" data-id="3">
                 <img src="/img/sneakers/news3.jpg" alt="Sneaker 3">
             </div>
         </div>
@@ -202,6 +202,17 @@
     <div class="footer-bottom">
         <p>&copy; 2024 SneakerHead. All rights reserved</p>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.grid-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    const newsId = this.getAttribute('data-id');
+                    window.location.href = `/news/${newsId}`;
+                });
+            });
+        });
+    </script>
 
     <!-- todo -->
 
