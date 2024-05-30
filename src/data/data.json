@@ -164,7 +164,8 @@
             "description" : "La New Balance 2002R Protection Pack Phantom possède une empeigne en mesh gris anthracite rehaussée de renforts de la même couleur en daim à bords bruts. La semelle intermédiaire Nrgy noire et la semelle extérieure assortie viennent parachever ce modèle.",
             "color" : "Phantom/Dark Grey",
             "img_1" : "/items/New Balance 2002R Phantom Protection Pack_1.jpg",
-            "img_2" : "/items/New Balance 2002R Phantom Protection Pack_2.jpg"
+            "img_2" : "/items/New Balance 2002R Phantom Protection Pack_2.jpg",
+            "lien" : "https://stockx.com/fr-fr/new-balance-m2002-protection-pack-phantom"
         },
         {
             "id" : 15,
@@ -175,7 +176,8 @@
             "description" : "Dotée d'une pointe en daim gris clair, la New Balance 550 White Green possède une empeigne en cuir blanc rehaussée de détails vert pin. L'étiquette ornée d'un ballon de basket et de la marque New Balance cousue sur la languette et la semelle assortie viennent parachever ce modèle rafraîchissant.",
             "color" : "White/Green",
             "img_1" : "/items/New Balance 550 « WhiteGreen »_1.jpg",
-            "img_2" : "/items/New Balance 550 « WhiteGreen »_2.jpg"
+            "img_2" : "/items/New Balance 550 « WhiteGreen »_2.jpg",
+            "lien" : "https://stockx.com/fr-fr/new-balance-550-white-green"
         },
         {
             "id" : 16,
@@ -186,7 +188,8 @@
             "color" : "White/Team Carolina",
             "description" : "Revêtant les couleurs de l’Université de Caroline du Nord, cette nouvelle New Balance 550 dispose d’une tige élaborée en cuir blanc. Les fameux accents bleu ciel, quant à eux, s’invitent au niveau de la doublure, du col en synthétique ou encore sur les nombreux brandings comme le tag rétro basket sur la languette. Une semelle immaculée, de même qu’une outsole bicolore, viennent compléter le look.",
             "img_1" : "/items/New Balance 550 « UNC »_1.jpeg",
-            "img_2" : "/items/New Balance 550 « UNC »_2.jpeg"
+            "img_2" : "/items/New Balance 550 « UNC »_2.jpeg",
+            "lien" : "https://stockx.com/fr-fr/new-balance-550-unc-white-university-blue"
         },
         {
             "id" : 17,
@@ -197,7 +200,8 @@
             "description" : "Brillant par sa simplicité, ce design bicolore gris et blanc présente une languette et un lining doublés, signature de la Campus 00s. On retrouve également les emblématiques logos sur le col et au niveau du heeltab alors qu’une gumsole conclut ce sneaker tour.",
             "color" : "Grey/White",
             "img_1" : "/items/adidas Campus 00s Grey_1.jpg",
-            "img_2" : "/items/adidas Campus 00s Grey_2.jpg"
+            "img_2" : "/items/adidas Campus 00s Grey_2.jpg",
+            "lien" : "https://stockx.com/fr-fr/adidas-campus-00s-grey-white"
         },
         {
             "id" : 18,
@@ -208,7 +212,8 @@
             "descrption" : "Toujours aussi populaire, la célèbre slipon adopte aujourd’hui le coloris Onyx. Celle-ci affiche une base noire, ainsi qu’une conception monobloc en EVA injecté pour la durabilité et la légèreté. On retrouve enfin un branding adidas au niveau de l’insole, de même que son incontournable semelle extérieure dentelée.",
             "color" : "Onyx",
             "img_1" : "/items/adidas Yeezy Slide Onyx_1.jpeg",
-            "img_2" : "/items/adidas Yeezy Slide Onyx_2.jpg"
+            "img_2" : "/items/adidas Yeezy Slide Onyx_2.jpg",
+            "lien" : "https://stockx.com/fr-fr/adidas-yeezy-slide-black-onyx"
         },
         {
             "id" : 19,
@@ -219,7 +224,8 @@
             "description" : "La adidas Yeezy Boost 700 Wave Runner marque un tournant dans l'histoire de ce modèle : l'allure épaisse inspirée des années 90 remplace une esthétique minimaliste et élégante. Elle mélange le style des chaussures de running en maille, comme la 350, et le look grunge de l'univers du skate de la 550. Son empeigne grise alliant mesh et cuir est rehaussée de renforts en daim noir et d'empiècements en mesh bleu sarcelle. Par ailleurs, sa semelle épaisse à amorti Boost et ses touches contrastées orange viennent compléter ce modèle.",
             "color" : "Multi Solid Grey/Chalk White/Core Black",
             "img_1" : "/items/adidas Yeezy Boost 700 Wave Runner_1.jpeg",
-            "img_2" : "/items/adidas Yeezy Boost 700 Wave Runner_2_jpeg"
+            "img_2" : "/items/adidas Yeezy Boost 700 Wave Runner_2_jpeg",
+            "lien" : "https://stockx.com/fr-fr/adidas-yeezy-wave-runner-700-solid-grey"
         },
         {
             "id" : 20,
@@ -230,7 +236,8 @@
             "description" : "La populaire Yeezy Slide imaginée par Kanye West dispose d’une conception monobloc et affiche une tige en EVA beige viornetin. Le design monochrome arbore enfin un branding adidas au niveau de l’insole, de même qu’une semelle extérieure dentelée qui lui confère une adhérence sur tout type de terrain.",
             "color" : "Pure",
             "img_1" : "/items/adidas Yeezy Slide Pure_1.jpeg",
-            "img_2" : "/items/adidas Yeezy Slide Pure_2.jpeg"
+            "img_2" : "/items/adidas Yeezy Slide Pure_2.jpeg",
+            "lien" : "https://stockx.com/fr-fr/adidas-yeezy-slide-pure-restock-pair"
         },
         {
             "id" : 21,
@@ -241,7 +248,8 @@
             "description" : "Après l’annonce d’une AJ1 Low OG Black Olive, le rappeur de Houston a imaginé un second coloris surnommé Elkins ou Canary. Celui-ci s’inspire du Elkins High School, un lycée public située au Texas où Travis a étudié.",
             "color" : "Blue/Yellow/White",
             "img_1" : "/items/Travis Scott x Air Jordan 1 Low OG Canary Elkins_1.jpg",
-            "img_2" : "/items/Travis Scott x Air Jordan 1 Low OG Canary Elkins_2.jpg"
+            "img_2" : "/items/Travis Scott x Air Jordan 1 Low OG Canary Elkins_2.jpg",
+            "lien" : "https://stockx.com/fr-fr/air-jordan-1-retro-low-og-sp-travis-scott-canary-womens"
 
         },
         {
@@ -253,7 +261,8 @@
             "color" : "White/Military Blue/Neutral Grey",
             "description" : "Initialement sortie en 1989, cette Air Jordan 4 est l’un des quatre coloris OG du label. Elle a connu en 2006 et en 2012 une réédition proche de ses racines à l’exception du “Nike Air” sur le talon, remplacé par le Jumpman. Puis en 2021, la Military Blue a refait surface dans une version Golf, générant chez quelques adeptes de la frustration. À présent, les nouvelles sont différentes et il ne vous reste plus qu’à patienter le retour de cette silhouette intemporelle !",
             "img_1" : "/items/Air Jordan 4 Military Blue 2024_1.jpg",
-            "img_2" : "/items/Air Jordan 4 Military Blue 2024_2.jpg"
+            "img_2" : "/items/Air Jordan 4 Military Blue 2024_2.jpg",
+            "lien" : "https://stockx.com/fr-fr/air-jordan-4-retro-military-blue-2024"
         },
         {
             "id" : 23,
@@ -264,7 +273,8 @@
             "color" : "White/Black/Brown",
             "description" : "Suite à une première Air Max 1, Nike prend une nouvelle direction en revisitant sa populaire runner. Celle-ci bénéficie d’une transformation significative en total décalage avec sa conception originale. En effet, modifiée de la pointe du pied jusqu’au talon, la paire adopte une base en cuir lisse, des empiècements en daim et un swoosh surdimensionné, rappelant les créations de Nike dans les années 1970. Pour finir, la série Nike Design by Japan rend également hommage à Bill Bowerman, le co-fondateur du swoosh, au travers des semelles intérieures.",
             "img_1" : "/items/nike-zoom-vomero-5-design-by-japan_1.jpg",
-            "img_2" : "/items/Nike Zoom Vomero 5 Design by Japan_2.jpg"
+            "img_2" : "/items/Nike Zoom Vomero 5 Design by Japan_2.jpg",
+            "lien" : "https://stockx.com/fr-fr/nike-zoom-vomero-5-design-by-japan-womens"
         },
         {
             "id" : 24,
@@ -275,7 +285,8 @@
             "color" : "Black/Multicolor",
             "description" : "La silhouette imaginée par le designer Sean McDowell s’inspire de la capitale allemande et notamment de sa vie nocturne à travers un design « split ». Le côté extérieur de la chaussure est ainsi totalement noir tandis que le côté intérieur laisse place à un dégradé de couleurs allant du rouge au bleu. Des touches de blanc apportent du contraste à l’ensemble. On remarque également l’inscription « Unity » sur les côtés et les lacets bicolores.",
             "img_1" : "/items/nike-air-max-plus-unity_1.jpeg",
-            "img_2" : "/items/nike-air-max-plus-unity_2.jpeg"
+            "img_2" : "/items/nike-air-max-plus-unity_2.jpeg",
+            "lien" : "https://stockx.com/fr-fr/air-jordan-1-retro-low-og-sp-travis-scott-reverse-mocha"
         },
         {
             "id" : 25,
@@ -286,7 +297,8 @@
             "color" : "Brown/White/Clay",
             "description" : "Pour notre plus grand bonheur, il s’attaque à nouveau à la Air Jordan 1 Low. Cette dernière reprend d’ailleurs les codes qui ont fait le succès des fameuses éditions précédentes. On avait par exemple eu le droit à un modèle en collaboration avec Fragment au cours de l’été 2021. Toutefois, cette version inédite, déjà aperçue aux pieds de sa fille Stormi, renoue davantage avec l’ADN de la Travis Scott x Air Jordan 1 Low Dark Mocha sortie en juillet 2019.",
             "img_1" : "/items/travis-scott-air-jordan-1-low-og-reverse-mocha_1.jpeg",
-            "img_2" : "/items/travis-scott-air-jordan-1-low-og-reverse-mocha_2.jpeg"
+            "img_2" : "/items/travis-scott-air-jordan-1-low-og-reverse-mocha_2.jpeg",
+            "lien" : "https://stockx.com/fr-fr/air-jordan-1-retro-low-og-sp-travis-scott-reverse-mocha"
         },
         {
             "id" : 26,
@@ -297,7 +309,8 @@
             "color" : "Yellow/Brown/Red/White",
             "description" : "Issue d’un pack composé de quatre autres coloris, cette itération inédite affiche un look outdoor. En effet, on remarque de nombreuses petites inspirations comme le nouveau système de laçage à sangles et les lacets de randonnée bicolores. La base en mesh, quant à elle, se pare d’un jaune beurre tandis que les superpositions en daim optent pour deux nuances de marron.",
             "img_1" : "/items/nike-air-max-1-travis-scott-baroque-brown_1.jpg",
-            "img_2" : "/items/nike-air-max-1-travis-scott-baroque-brown_2.jpg"
+            "img_2" : "/items/nike-air-max-1-travis-scott-baroque-brown_2.jpg",
+            "lien" : "https://stockx.com/fr-fr/nike-air-max-1-travis-scott-baroque-brown"
         },
         {
             "id" : 27,
@@ -308,7 +321,8 @@
             "color" : "Black",
             "description" : "La silhouette revêt une base noire contrastée par des surpiqûres blanches. On retrouvera pour sûr le fameux swoosh oversize inversé sur le quarter panel, ainsi que le co-branding sur la languette. Mais également les différents brandings Cactus Jack sur le talon et les panneaux intérieurs, de même que le logo Wings sur le talon droit. L’abeille brodée au talon serait un clin d’oeil à sa fille Stormi. ⁠La paire sera accompagnée de trois sets de lacets.",
             "img_1" : "/items/travis-scott-air-jordan-1-low-og-black-phantom_1.jpeg",
-            "img_2" : "/items/travis-scott-air-jordan-1-low-og-black-phantom_2.jpeg"
+            "img_2" : "/items/travis-scott-air-jordan-1-low-og-black-phantom_2.jpeg",
+            "lien" : "https://stockx.com/fr-fr/air-jordan-1-retro-low-og-sp-travis-scott-black-phantom"
         },
         {
             "id" : 28,
@@ -319,7 +333,8 @@
             "color" : "Blue/White/Green",
             "description" : "Pourvue d’un color blocking emprunté à la « Fire Red », cette Air Jordan 4 affiche une base en cuir blanc. On retrouve ensuite des superpositions en cuir ton-sur-ton, ainsi qu’un filet en TPU assorti. Les accents noirs, quant à eux, se concentrent principalement sur les ailes et le renfort arrière tandis que les touches de vert s’invitent sur les œillets, la doublure et le Jumpman de la languette. Une semelle tricolore, équipée d’une unité Air-Sole visible sous le talon, peaufine l’ensemble.",
             "img_1" : "/items/air-jordan-4-oil-green_1.jpeg",
-            "img_2" : "/items/air-jordan-4-oil-green_2.jpeg"
+            "img_2" : "/items/air-jordan-4-oil-green_2.jpeg",
+            "lien" : "https://stockx.com/fr-fr/air-jordan-4-retro-oil-green-w"
         },
         {
             "id" : 29,
@@ -330,7 +345,8 @@
             "color" : "Blue/White/Grey",
             "description" : "La Nike Air Max 1 se pare d’une tige en mesh gris clair et cuir blanc, contrasté par un mudguard en suede ondulé de couleur bleu rappelant les vagues. Un mini swoosh blanc brodé au niveau de la toe box et par les logos Patta sur le tag des languettes et les semelles intérieures finalisent le design imaginé par les fondateurs Edson Sabajo et Guillaume Schmidt. Le duo va également proposer un film baptisé « The Wave » pour célébrer cette nouvelle collaboration très attendue. Ce film a été réalisé par Steve McQueen et Mahaneela, et on y retrouvera notamment le rappeur anglais Skepta, la designer britannique Martine Rose, ou encore la team running de la boutique.",
             "img_1" : "/items/patta-nike-air-max-1-noise-aqua_1.jpg",
-            "img_2" : "/items/patta-nike-air-max-1-noise-aqua_2.jpg"
+            "img_2" : "/items/patta-nike-air-max-1-noise-aqua_2.jpg",
+            "lien" : "https://stockx.com/fr-fr/nike-air-max-1-patta-noise-aqua-without-bracelet"
         },
         {
             "id" : 30,
@@ -341,7 +357,8 @@
             "color" : "White/Grey",
             "description" : "Inspirée du proverbe africain « Each One Teach One », la silhouette affiche un upper en mesh gris, ainsi que des superpositions en cuir blanc. On retrouve ensuite une midsole crème, un mini swoosh brodé sur l’avant-pied, de même que le fameux mudguard ondulé signature. Un branding Patta sur les languettes et les insoles, à l’image des cinq collaborations Monarch, Noise Aqua, Black, Night Maroon et Orange Blaze, complètent le relooking",
             "img_1" : "/items/patta-nike-air-max-1-white-grey_1.jpeg",
-            "img_2" : "/items/patta-nike-air-max-1-white-grey_2.jpeg"
+            "img_2" : "/items/patta-nike-air-max-1-white-grey_2.jpeg",
+            "lien" : "https://stockx.com/fr-fr/nike-air-max-1-patta-waves-white"
         },
         {
             "id" : 31,
@@ -352,7 +369,8 @@
             "color" : "Blue/White",
             "description" : "Aussi surnommée Blue Panda, la Nike Dunk Low University Blue est sortie le 4 juin 2021, notamment sur Nike.com et chez certains détaillants au tarif habituel de 100€. Elle est désormais disponible à travers les marketplaces listées sur cette page. Attention, il s’agit de l’une des dunks qui côte le plus dernièrement. Vous pouvez également vous rabattre vers l’un des nombreux coloris proches que la marque a sorti plus récemment. Bon cop !",
             "img_1" : "/items/nike-dunk-low-university-blue_1.jpeg",
-            "img_2" : "/items/nike-dunk-low-university-blue_2.jpeg"
+            "img_2" : "/items/nike-dunk-low-university-blue_2.jpeg",
+            "lien" : "https://stockx.com/fr-fr/nike-dunk-low-unc-2021"
         },
         {
             "id" : 32,
@@ -363,7 +381,8 @@
             "color" : "White/Green",
             "description" : "Le déferlement de Nike Dunk Low se poursuit donc en ce début d’année avec l’arrivée du coloris “Team Green”. Affichant un color blocking des plus familiers, la silhouette de Peter Moore est ici pourvue d’une empeigne en cuir blanc. On distingue ensuite des superpositions en cuir vert bouteille, ainsi que d’autres éléments assortis comme les lacets plats. Un tag rétro apposé sur la languette, une broderie Nike sur les talons, ainsi qu’une semelle blanche combinée à une outsole vert bouteille, couronne l’ensemble.",
             "img_1" : "/items/nike-dunk-low-team-green_1.jpg",
-            "img_2" : "/items/nike-dunk-low-team-green_2.jpg"
+            "img_2" : "/items/nike-dunk-low-team-green_2.jpg",
+            "lien" : "https://stockx.com/fr-fr/nike-dunk-low-essential-satin-green-womens"
         },
         {
             "id" : 33,
@@ -374,7 +393,8 @@
             "color" : "White/Chrome",
             "description" : "Initialement annoncée pour le 27 janvier 2022, la sortie des Nike Hot Step Air Terra NOCTA « White » aura finalement lieu le 3 mars sur NOCTA.com et chez une sélection de retailers. Le prix a été fixé à 150€. Aucune sortie sur Nike.com n’a été annoncée pour le moment. Sachez également qu’une version « Black » sortira à la même date.",
             "img_1" : "/items/drake-nocta-nike-hot-step-air-terra-white-chrome_1.jpg",
-            "img_2" : "/items/drake-nocta-nike-hot-step-air-terra-white-chrome_2.jpg"
+            "img_2" : "/items/drake-nocta-nike-hot-step-air-terra-white-chrome_2.jpg",
+            "lien" : "https://stockx.com/fr-fr/nike-hot-step-air-terra-drake-nocta"
         },
         {
             "id" : 34,
@@ -385,7 +405,8 @@
             "color" : "White/Brown/Cream",
             "description" : "La silhouette combine ainsi une base en cuir blanc sur laquelle est disposé un mini swoosh métallique doré. Elle présente également des superpositions en suede crème et cuir beige. Par ailleurs, le système de laçage s’accompagne de sangles marron et blanche assorties aux ferrets. Le branding Jacquemus, quant à lui, est gaufré sur la languette et le talon. Enfin, une midsole blanche et une outsole gum, dont le design reste fidèle à celui de la Humara, apportent la touche finale. Sachez aussi qu’un second coloris « Brown » sera également disponible.",
             "img_1" : "/items/jacquemus-nike-air-humara-beige_1.jpeg",
-            "img_2" : "/items/jacquemus-nike-air-humara-beige_2.jpeg"
+            "img_2" : "/items/jacquemus-nike-air-humara-beige_2.jpeg",
+            "lien" : "https://stockx.com/fr-fr/nike-air-humara-lx-jacquemus-beige-w"
         },
         {
             "id" : 35,
@@ -396,7 +417,8 @@
             "color" : "Blue/White",
             "description" : "La nouvelle Nike Dunk Low WMNS « Blue Paisley » est sortie le 1er janvier 2022 au Japon. La release européenne devrait avoir lieu le 18 février sur Nike.com (non confirmé pour le moment). L’édition sera uniquement disponible en pointures femmes et au tarif approximatif de 100€. Bon cop ladies !",
             "img_1" : "/items/nike-dunk-low-wmns-blue-paisley_1.jpeg",
-            "img_2" : "/items/nike-dunk-low-wmns-blue-paisley_2.jpeg"
+            "img_2" : "/items/nike-dunk-low-wmns-blue-paisley_2.jpeg",
+            "lien" : "https://stockx.com/fr-fr/nike-dunk-low-blue-paisley-w"
         },
         {
             "id" : 36,
@@ -407,7 +429,8 @@
             "color" : "Pink/Black",
             "description" : "Cette seconde déclinaison de la Air Max 95 revisitée par Clint419 reprend les mêmes éléments de design que la Sequoia. En effet, elle se pare d’une conception en cuir avec des superpositions dans des teintes noire, grise et violette, et accompagnées d’un filet. Ce dernier s’accorde à la languette et la semelle tandis que des accents roses fluos prennent place au niveau des brandings Corteiz, du swoosh et du logo Alcatraz. Qui plus est, ils habillent également l’unité Air-Sole. Enfin, une doublure assortie aux insoles au motif camo dans des tons verts et gris, un lace lock, des finitions en 3M réfléchissant et des coordonnées GPS sur les talons peaufinent le look de la paire.",
             "img_1" : "/items/corteiz-nike-air-max-95-pink-beam_1.jpeg",
-            "img_2" : "/items/corteiz-nike-air-max-95-pink-beam_2.jpeg"
+            "img_2" : "/items/corteiz-nike-air-max-95-pink-beam_2.jpeg",
+            "lien" : "https://stockx.com/fr-fr/nike-air-max-95-sp-corteiz-pink-beam"
         },
         {
             "id" : 37,
@@ -418,7 +441,8 @@
             "color" : "Sargasso Sea/White/Black",
             "description" : "L’iconique silhouette montante se voit donc à nouveau revisitée par Stüssy sur le thème de son fameux motif “8-Ball”. Elle affiche un upper en hairy suede bleu orné de la boule de billard sur les panneaux extérieurs. Le patch à l’effigie du logo Chuck Taylor, quant à lui, est disposé sur la doublure intérieure. On retrouve aussi le branding Stüssy sur le verso de la languette et un logo Stüssy All Star sur le recto. Des oeillets métalliques, une midsole blanche et une gumsole parachèvent le design.",
             "img_1" : "/items/Stüssy x Converse Chuck 70 8-Ball_1.jpeg",
-            "img_2" : "/items/Stüssy x Converse Chuck 70 8-Ball_2.jpeg"
+            "img_2" : "/items/Stüssy x Converse Chuck 70 8-Ball_2.jpeg",
+            "lien" : "https://stockx.com/fr-fr/converse-chuck-taylor-all-star-70-hi-stussy-8-ball"
         },
         {
             "id" : 38,
@@ -429,7 +453,8 @@
             "color" : "Electric Purple/Fiery Red",
             "description" : "La marque au félin et la franchise de Satoshi Tajiri nous proposent une TRC Blaze Court inspirée du personnage Ectoplasma. La silhouette affiche ainsi un upper violet en suede et mesh, contrasté par des accents de rouge et de noir, le tout finalisé par une midsole blanche. On retrouve la tête d’Ectoplasma sur le hangtag et la languette, alors que la collection Puma x Pokémon se compose aussi d’une Rider FV Bulbizarre, d’une Suede Squirtle Carapuce, d’une Slipstream Lo Salamèche, d’une Rider FV et d’une RS-X Pikachu.",
             "img_1" : "/items/Pokémon x PUMA TRC Blaze Court Ectoplasma_1.jpg",
-            "img_2" : "/items/Pokémon x PUMA TRC Blaze Court Ectoplasma_2.jpg"
+            "img_2" : "/items/Pokémon x PUMA TRC Blaze Court Ectoplasma_2.jpg",
+            "lien" : "https://stockx.com/fr-fr/puma-trc-blaze-court-pokemon-gengar"
         }
     ]
 }
