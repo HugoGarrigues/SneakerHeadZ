@@ -82,6 +82,7 @@
 
 #stock-2 {
     display: flex;
+    margin-right: 30px;
 }
 
 button {
@@ -142,4 +143,10 @@ button {
     color: #fff;
     font-size: 1.2em;
     margin-left: 10px;
+}
+
+#stock-link {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
 }

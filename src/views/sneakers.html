@@ -77,16 +77,17 @@
 
             <h1>Sites en Stock</h1>
 
-            <div id="stock">
-                <div id="left-part">
-                    <img id="logo" src="/img/logo/stock_x.png" alt="">
-                    <p>StockX</p> <br> <p></p>
+            <a id="stock-link" href="" target="_blank">
+                <div id="stock">
+                    <div id="left-part">
+                        <img id="logo" src="/img/logo/stock_x.png" alt="">
+                        <p>StockX</p>
+                        <br>
+                        <p></p>
+                    </div>
+                    <p id="stock-2">EN STOCK</p>
                 </div>
-
-                <p id="stock-2">
-                    EN STOCK
-                </p>
-            </div>
+            </a>
         </div>
 
     </section>
@@ -233,6 +234,7 @@
                     document.getElementById('color').textContent = `Couleur : ${sneaker.color}`;
                     document.getElementById('img_1').src = sneaker.img_1;
                     document.getElementById('img_2').src = sneaker.img_2;
+                    document.getElementById('stock-link').href = sneaker.lien;
                 })
                 .catch(error => {
                     console.error('Error fetching sneaker details:', error);
