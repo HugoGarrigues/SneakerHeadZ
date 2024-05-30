@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
-const Wishlist = require('../models/Wishlist'); // Assurez-vous que le modèle Wishlist est correctement défini
-const { isAuthenticatedAPI } = require('../middleware/authMiddleware'); ; // Middleware pour vérifier l'authentification
+const Wishlist = require('../models/Wishlist'); 
+const { isAuthenticatedAPI } = require('../middleware/authMiddleware'); ; 
 const data = require('../data/data.json');  
 
 // Route pour la page d'accueil
@@ -14,10 +14,6 @@ router.get('/', (req, res) => {
 router.post('/api/add', isAuthenticatedAPI, async (req, res) => {
     const { sneakerId } = req.body;
     const userId = req.session.user.idUtilisateur;
-
-    console.log("User ID:", userId);  // Log de débogage
-    console.log("Sneaker ID:", sneakerId);  // Log de débogage
-
     try {
         if (!userId) {
             return res.status(400).json({ success: false, message: 'Utilisateur non défini' });
@@ -43,8 +39,6 @@ router.post('/api/add', isAuthenticatedAPI, async (req, res) => {
 // Route pour récupérer la wishlist de l'utilisateur connecté
 router.get('/api/get', isAuthenticatedAPI, async (req, res) => {
     const userId = req.session.user.idUtilisateur;
-
-    console.log("User ID:", userId);  // Log de débogage
 
     try {
         if (!userId) {
@@ -76,10 +70,6 @@ router.get('/api/get', isAuthenticatedAPI, async (req, res) => {
 router.post('/api/remove', isAuthenticatedAPI, async (req, res) => {
     const { sneakerId } = req.body;
     const userId = req.session.user.idUtilisateur;
-
-    console.log("User ID:", userId);  // Log de débogage
-    console.log("Sneaker ID:", sneakerId);  // Log de débogage
-
     try {
         if (!userId) {
             return res.status(400).json({ success: false, message: 'Utilisateur non défini' });

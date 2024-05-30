@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const data = require('../data/data.json');
-const Wishlist = require('../models/Wishlist');  // Assurez-vous que le modèle Wishlist est correctement défini
+const Wishlist = require('../models/Wishlist'); 
 
 // Route pour la page d'accueil de la collection
 router.get('/', (req, res) => {

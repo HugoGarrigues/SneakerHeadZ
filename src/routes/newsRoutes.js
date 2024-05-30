@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
-const newsData = require('../data/news.json');  // Assurez-vous que le chemin est correct
+const newsData = require('../data/news.json');
 
 // API route for getting all news
 router.get('/api', (req, res) => {

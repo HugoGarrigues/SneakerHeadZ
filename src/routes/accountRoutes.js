@@ -1,5 +1,5 @@
 const express = require('express');
-const isAuthenticated = require('../middleware/isAuthenticated'); // Assure-toi que le chemin est correct
+const isAuthenticated = require('../middleware/isAuthenticated'); 
 const router = express.Router();
 const path = require('path');
 const accountController = require('../controllers/accountController');
