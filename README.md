@@ -22,7 +22,6 @@ Rejoignez-nous et découvrez une nouvelle manière de trouver et d'acheter des s
 - [Description](#description)
 - [Fonctionnalités](#fonctionnalités)
 - [Installation](#installation)
-- [Utilisation](#utilisation)
 - [Architecture](#architecture)
 - [Technologies](#technologies)
 - [Auteurs](#auteurs)
@@ -37,22 +36,95 @@ Rejoignez-nous et découvrez une nouvelle manière de trouver et d'acheter des s
 
 ## Installation
 
-```
-todo
-```
-## Utilisation
+1. Clonez ce dépôt sur votre machine locale :
+   ```sh
+   git clone https://github.com/HugoGarrigues/SneakerHeadZ
+   
+2. Accédez au répertoire du projet :
+   ```sh
+   cd SneakerHead
 
-todo
+3. Installez les dépendances en exécutant la commande suivante :
+   ```sh
+   npm install
+
+4. Assurez-vous d'avoir une instance de MySQL en cours d'exécution sur votre machine. Vous devrez également créer une base de données nommée sneakerhead et importer le fichier sneakerhead.sql situé dans le dossier installation.
+
+
+5. Configurez votre base de données en créant un fichier .env dans le dossier SneakerHeadZ. Copiez le contenu suivant dans le fichier .env et remplacez les valeurs par vos propres informations de connexion :
+   ```sh
+   DB_NAME='sneakerhead'
+   DB_USER='votre_nom_utilisateur',
+   DB_PASSWORD='votre_mot_de_passe',
+   DB_HOST='localhost'
+
+6. Lancez l'application en exécutant la commande suivante :
+   ```sh
+   npm start
 
 ## Architecture
 
 ``` bash
-├── todo
+SneakerHead
+├── app.js
+├── public
+│   ├── css
+│   └── img
+├── src
+│   ├── config
+│   │   ├── db.js
+│   │   └── index.js
+│   ├── controllers
+│   │   ├── accountController.js
+│   │   └── sneakersController.js
+│   ├── data
+│   │   ├── data.json
+│   │   ├── news.json
+│   │   └── items
+│   │       ├── image1.jpg
+│   │       ├── image2.jpg
+│   │       └── ...
+│   ├── middleware
+│   │   ├── authMiddleware.js
+│   │   └── isAuthenticated.js
+│   ├── models
+│   │   ├── Utilisateur.js
+│   │   └── Wishlist.js
+│   ├── routes
+│   │   ├── accountRoutes.js
+│   │   ├── collectionRoutes.js
+│   │   ├── homeRoutes.js
+│   │   ├── newsRoutes.js
+│   │   ├── sneakersRoutes.js
+│   │   └── wishlistRoutes.js
+│   ├── views
+│   │   ├── index.html
+│   │   ├── login.html
+│   │   ├── register.html
+│   │   ├── sneakers.html
+│   │   └── ...
+│   ├── .gitattributes
+│   └── README.md
+└───
 ```
 
 ## Technologies
 
-todo
+```
+Frontend :
+
+- CSS
+- HTML
+- JS
+
+Backend : 
+
+- MySQL
+- Sequelize
+- Json
+- Node.js
+- Express
+```
 
 ## Auteurs
 
